@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title> 한샘닷컴 </title>
+<meta name="keywords" content="한샘닷컴"/>
+<meta name="description" content="컨텐츠 설명"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
+<link rel="stylesheet" href="css/sub3.css" />
+<!--sub와 메인사이즈가 너무 상이해서 sub1,2,3,4,5,6으로 나눔 sub끼리도 조금씩 다른 부분있어서 sub1,2,3,4,5,6으로 나눔-->
+<script type="text/javascript">
+$("div.family a").click(function() {
+    $(this).next("ul").toggle();
+    return false;
+});
+ 
+$("div.family ul li").click(function() {
+    $(this).parent().hide().parent("div.family").children("a").text($(this).text());
+    $(this).prependTo($(this).parent());
+});
+
+</script>
+ </head>
+ <body>
+  <div id="skipnavigation">
+	<ul>
+		<li><a href="#container">본문바로가기</a></li>
+	</ul>
+ </div>
+	<div id="wrapper">
+		<div id="header">
+			<div class="header_inner">
+				<h1><a href="index.html"><img src="images/h1_logo.gif" alt="한샘 인테리어"/></a></h1>
+				<div class="top">
+					<ul>
+						<li><a href="#">멤버쉽소개</a></li>
+						<li><a href="#">사이트맵</a></li>
+					</ul>
+				</div>
+				<div class="utill">
+					<ul>
+						<li>Language:</li>
+						<li><a href="#" class="korean">Korean / </a></li>
+						<li><a href="#">English / </a></li>
+						<li><a href="#">Chinese (Simplified)</a></li>
+					</ul>
+				</div>
+				<div class="gnb">
+					<ul>
+						<li><a href="sub1.html">기업소개</a>
+							<ul>
+								<li><a href="sub1.html">경영이념</a></li>
+								<li><a href="sub1.html">경영방침</a></li>
+								<li><a href="sub1.html">경영사업소개</a></li>
+								<li><a href="sub1.html">연혁</a></li>
+								<li><a href="sub1.html">한샘소식</a></li>
+							</ul>
+						</li>
+						<li><a href="sub2.html">채용안내</a>
+							<ul>
+								<li><a href="sub2.html">채용공고</a></li>
+								<li><a href="sub2.html">나의 채용정보</a></li>
+								<li><a href="sub2.html">채용정보</a></li>
+								<li><a href="sub2.html">한샘인사</a></li>
+							</ul>
+						</li>
+						<li><a href="sub3.html">투자정보</a>
+							<ul>
+								<li><a href="sub3.html">경영정보</a></li>
+								<li><a href="sub3.html">재무정보</a></li>
+								<li><a href="sub3.html">공시</a></li>
+							</ul>
+						</li>
+						<li><a href="sub4.html">사회공헌</a>
+							<ul>
+								<li><a href="sub4.html">한샘사회공헌</a></li>
+								<li><a href="sub4.html">사회공헌 발자취</a></li>
+								<li><a href="sub4.html">한샘 사회공헌 소식</a></li>
+							</ul>
+						</li>
+						<li><a href="sub5.html">고객지원</a>
+							<ul>
+								<li><a href="sub5.html">한샘서비스센터</a></li>
+								<li><a href="sub5.html">고객상담</a></li>
+								<li><a href="sub5.html">찾아오시는 길</a></li>
+								<li><a href="sub5.html">한샘멤버십</a></li>
+								<li><a href="sub5.html">한샘상품권</a></li>
+								<li><a href="sub5.html">공지사항</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--///gnb-->
+			</div><!--//header_inner-->
+		</div>
+		<div id="visual">
+			<div class="visual_inner">
+				<img src="images/img_intro_visual_02.jpg" alt="" />
+			</div>
+		</div>
+		
+		<div id="container">
+			<div class="location">
+				<p><a href="#"> 메인화면 </a> &gt; <a href="#"> 투자정보 </a> &gt; <a href="#"> 재무 정보 </a> &gt; <a href="#"> 재무 하이라이트 </a></p>
+			</div>
+			<div class="tab">
+				<ul>
+					<li class="on"><a href="#">재무 하이라이트</a></li>
+					<li><a href="#">재무제표</a></li>
+					<li><a href="#">분기실적</a></li>
+					<li><a href="#">애뉴얼리포트</a></li>
+				</ul>
+			</div>
+			<div class="contents">
+				<div class="top">
+					<h2 class="h_tit nam">탄탄한 재무구조로 고객에게 신뢰를 얻고 있습니다.</h2>
+					<p class="h_desc">2년간의 재무성과를 요약한 재무 하이라이트입니다.</p>
+				</div>
+				<div class="highlight_wrap">
+					<span class="h_info_unit">(단위 : 백만원)</span>
+					<div class="table_wrap mt8">
+						<table border="1">
+							<caption>제무 하이라이트 테이블로 매출액, 매출총이익, 영업이익, 밥인세차감전순이익, 당기순이익, 총자산, 부채총계, 자본총계, ROA, ROE, 부채비율, 차입금의존도, 주당순이익(원), 주단배당금(원)에 대한 내용을 포함하고 있습니다.</caption>
+							<colgroup>
+								<col style="width:240px;"/>	
+								<col style="width:360px;"/>	
+								<col style="width:360px;"/>	
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">항목</th>
+									<th scope="col">2014년</th>
+									<th scope="col">2013년</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">매출액</th>
+									<td>1,325,043</td>
+									<td>1,006,946</td>
+								</tr>
+								<tr>
+									<th scope="row">매출총이익</th>
+									<td>407,916</td>
+									<td>305,815</td>
+								</tr>
+								<tr>
+									<th scope="row">영업이익</th>
+									<td>110,404</td>
+									<td>79,817</td>
+								</tr>
+								<tr>
+									<th scope="row">밥인세차감전순이익</th>
+									<td>117,422</td>
+									<td>81,211</td>
+								</tr>
+								<tr>
+									<th scope="row">당기순이익</th>
+									<td>86,692</td>
+									<td>61,638</td>
+								</tr>
+								<tr>
+									<th scope="row">총자산</th>
+									<td>544,027</td>
+									<td>506,202</td>
+								</tr>
+								<tr>
+									<th scope="row">부채총계</th>
+									<td>205,981</td>
+									<td>241,923</td>
+								</tr>
+								<tr>
+									<th scope="row">자본총계</th>
+									<td>338,046</td>
+									<td>264,279</td>
+								</tr>
+								<tr>
+									<th scope="row">ROA</th>
+									<td>15.90%</td>
+									<td>12.1%</td>
+								</tr>
+								<tr>
+									<th scope="row">ROE</th>
+									<td>25.60%</td>
+									<td>23.2%</td>
+								</tr>
+								<tr>
+									<th scope="row">부채비율</th>
+									<td>61.10%</td>
+									<td>91.5%</td>
+								</tr>
+								<tr>
+									<th scope="row">차입금의존도</th>
+									<td>5.60%</td>
+									<td>4.5%</td>
+								</tr>
+								<tr>
+									<th scope="row">주당순이익(원)</th>
+									<td>4,793</td>
+									<td>3,402</td>
+								</tr>
+								<tr>
+									<th scope="row">주당배당금(원)</th>
+									<td>850</td>
+									<td>700</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<div class="footer_inner">
+				<div class="fl-left">
+					<div class="foot_link">
+						<ul>
+							<li><a href="#">이용약관 / </a></li>
+							<li><a href="#">개인정보취급방침 /</a></li>
+							<li><a href="#">이메일무단수집거부 /</a></li>
+							<li><a href="#">사이버감사실</a></li>
+						</ul>
+					</div>
+					<div class="foot_infoL">
+						<ul>
+							<li><a href="#">대표: 최양하</a></li>
+							<li><a href="#">사업자등록번호: 133-81-22865</a></li>
+							<li><a href="#">통신판매신고번호: 안산 제 512호</a></li>
+							<li><a href="#">All rights reserved. Copyright 2015</a></li>
+							
+						</ul>
+					</div>
+					<div class="foot_infoR">
+						<ul>
+							<li><a href="#">경기도 안산시 번영2로 144 / 15418</a></li>
+							<li><a href="#">대표번호:02-6908-3114</a></li>
+							<li><a href="#">A/S센터: http://as.hanssem.com</a></li>
+							<li><a href="#">쇼핑몰 고객센터 : 1688-4945</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="fl-right">
+					<div class="flag_shop">
+						<p>한샘플래그샵</p>
+						<ul>
+							<li><a href="#">잠실점 02-3430-6900, 논현점 02-542-8558</a></li>
+							<li><a href="#">목동점 02-6344-7000, 방배점 02-591-2300</a></li>
+							<li><a href="#">분당점 031-719-3100, 부산센텀점 051-790-8500</a></li>
+							<li><a href="#">대구범어점 053-749-8500</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="family">
+					<form name="family-site" action="" method="post">
+					<fieldset>
+						<legend>Family Site</legend>
+							<select name="siteLink" title="사이트 선택">
+								<option selected="selected">Family Site</option>
+								<option value='http://www.hanssem.com/mallmain.html'> · 한샘몰</option>
+								<option value='http://kitchen.hanssem.com/kitchen/main'> · 한샘키친&amp;바스</option>
+								<option value='http://interior.hanssem.com/index.do'> · 한샘인테리어</option>
+								<option value='http://ik.hanssem.com/ik/front/main.do'>· 한샘iK</option>
+								<option value='http://service.hanssem.com/main.as'>· 한샘서비스센터</option>
+							</select>
+					</fieldset>
+					</form>
+				</div>
+				
+				<div class="sns">
+					<ul>
+						<li><a href="#"><img src="images/icon_facebook.gif" alt="facebook" /></a></li>
+						<li><a href="#"><img src="images/icon_blog.gif" alt="blog" /></a></li>
+						<li><a href="#"><img src="images/icon_youtube.gif" alt="youtube" /></a></li>
+					</ul>
+				</div>
+			</div><!--//footer_inner-->
+		</div><!--//footer-->
+	</div><!--//wrapper-->
+ </body>
+</html>

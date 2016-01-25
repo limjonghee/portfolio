@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title> 한샘닷컴 </title>
+<meta name="keywords" content="한샘닷컴"/>
+<meta name="description" content="컨텐츠 설명"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<link rel="stylesheet" href="css/jquery.bxslider.css"/>
+<link rel="stylesheet" href="css/sub2.css" /><!--sub와 메인사이즈가 너무 상이해서 sub1,2,3,4,5,6으로 나눔 sub끼리도 조금씩 다른 부분있어서 sub1,2,3,4,5,6으로 나눔-->
+
+<script type="text/javascript">
+$("div.family a").click(function() {
+    $(this).next("ul").toggle();
+    return false;
+});
+ 
+$("div.family ul li").click(function() {
+    $(this).parent().hide().parent("div.family").children("a").text($(this).text());
+    $(this).prependTo($(this).parent());
+});
+
+</script>
+ </head>
+ <body>
+  <div id="skipnavigation">
+	<ul>
+		<li><a href="#container">본문바로가기</a></li>
+	</ul>
+ </div>
+	<div id="wrapper">
+		<div id="header">
+			<div class="header_inner">
+				<h1><a href="index.html"><img src="images/h1_logo.gif" alt="한샘 인테리어"/></a></h1>
+				<div class="top">
+					<ul>
+						<li><a href="#">멤버쉽소개</a></li>
+						<li><a href="#">사이트맵</a></li>
+					</ul>
+				</div>
+				<div class="utill">
+					<ul>
+						<li>Language:</li>
+						<li><a href="#" class="korean">Korean / </a></li>
+						<li><a href="#">English / </a></li>
+						<li><a href="#">Chinese (Simplified)</a></li>
+					</ul>
+				</div>
+				<div class="gnb">
+					<ul>
+						<li><a href="sub1.html">기업소개</a>
+							<ul>
+								<li><a href="sub1.html">경영이념</a></li>
+								<li><a href="sub1.html">경영방침</a></li>
+								<li><a href="sub1.html">경영사업소개</a></li>
+								<li><a href="sub1.html">연혁</a></li>
+								<li><a href="sub1.html">한샘소식</a></li>
+							</ul>
+						</li>
+						<li><a href="sub2.html">채용안내</a>
+							<ul>
+								<li><a href="sub2.html">채용공고</a></li>
+								<li><a href="sub2.html">나의 채용정보</a></li>
+								<li><a href="sub2.html">채용정보</a></li>
+								<li><a href="sub2.html">한샘인사</a></li>
+							</ul>
+						</li>
+						<li><a href="sub3.html">투자정보</a>
+							<ul>
+								<li><a href="sub3.html">경영정보</a></li>
+								<li><a href="sub3.html">재무정보</a></li>
+								<li><a href="sub3.html">공시</a></li>
+							</ul>
+						</li>
+						<li><a href="sub4.html">사회공헌</a>
+							<ul>
+								<li><a href="sub5.html">한샘사회공헌</a></li>
+								<li><a href="sub5.html">사회공헌 발자취</a></li>
+								<li><a href="sub5.html">한샘 사회공헌 소식</a></li>
+							</ul>
+						</li>
+						<li><a href="sub5.html">고객지원</a>
+							<ul>
+								<li><a href="sub5.html">한샘서비스센터</a></li>
+								<li><a href="sub5.html">고객상담</a></li>
+								<li><a href="sub5.html">찾아오시는 길</a></li>
+								<li><a href="sub5.html">한샘멤버십</a></li>
+								<li><a href="sub5.html">한샘상품권</a></li>
+								<li><a href="sub5.html">공지사항</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--///gnb-->
+			</div><!--//header_inner-->
+		</div>
+		<div id="visual">
+			<div class="visual_inner">
+				<img src="images/img_intro_visual_01.jpg" alt="" />
+			</div>
+		</div>
+		
+		<div id="container">
+			<div class="location">
+				<p><a href="#"> 메인화면 </a> &gt; <a href="#"> 로그인 </a></p>
+			</div>
+			
+			<div class="contents">
+				<div class="h_txt_info">
+					<p><img src="images/htxt_login.gif" alt="한샘채용에 오신것을 환영합니다 우리는 꿈과 열정이 있는 당신을 기다립니다" /></p>
+					<a href="#" class="btn_base"><img src="images/btn_go_noti.gif" alt="채용공고 보러가기" /></a>
+				</div>
+				<hr class="divider"/>
+				<h2 class="h1_tit"><img src="images/h1_login.gif" alt="로그인" /></h2>
+				<p class="h_desc"><img src="images/h_desc_login.gif" alt="한샘채용 회원 가입시 아이디와 비밀번호를 입력해 주세요. 회원정보가 없으신 분들은 [회원가입]을 먼저 진행해 주세요" /></p>
+				<div class="login_wrap">
+					<form id="loginform" method="post">
+						<div class="login">
+							<dl class="login_input clfix">
+								<dt><label for="login_id"><img src="images/txt_id.gif" alt="아이디" /></label></dt>
+								<dd><input type="text" id="userId" class="txt" style="width:267px;" title="아이디 입력란" name="userId"/></dd>
+							</dl>
+							<dl class="login_input clfix">
+								<dt><label for="login_password"><img src="images/txt_password.gif" alt="비밀번호" /></label></dt>
+								<dd><input type="password" id="userPass" class="txt" style="width:267px;" title="비밀번호 입력란" name="userPass"/></dd>
+							</dl>
+							<p class="login_btn"><a href="#" class="btn_base"><img src="images/btn_login_c.gif" alt="입사지원 로그인" /></a></p>
+						</div>
+					</form>
+					<div class="loginfind">
+					<ul>
+						<li><a href="#"><img src="images/txt_join.gif" alt="회원가입" /></a></li>
+						<li><a href="#"><img src="images/txt_find_id.gif" alt="아이디 찾기" /></a></li>
+						<li><a href="#"><img src="images/txt_find_password.gif" alt="비밀번호 찾기" /></a></li>
+					</ul>
+					</div>
+				</div>
+				<div class="login_info">
+					<p>입사지원서 비밀번호 및 기타문의는 <a href="mailto:recruit@hanssem.com" title="입사지원 문의 메일">recruit@hanssem.com</a>으로 문의바랍니다</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<div class="footer_inner">
+				<div class="fl-left">
+					<div class="foot_link">
+						<ul>
+							<li><a href="#">이용약관 / </a></li>
+							<li><a href="#">개인정보취급방침 /</a></li>
+							<li><a href="#">이메일무단수집거부 /</a></li>
+							<li><a href="#">사이버감사실</a></li>
+						</ul>
+					</div>
+					<div class="foot_infoL">
+						<ul>
+							<li><a href="#">대표: 최양하</a></li>
+							<li><a href="#">사업자등록번호: 133-81-22865</a></li>
+							<li><a href="#">통신판매신고번호: 안산 제 512호</a></li>
+							<li><a href="#">All rights reserved. Copyright 2015</a></li>
+							
+						</ul>
+					</div>
+					<div class="foot_infoR">
+						<ul>
+							<li><a href="#">경기도 안산시 번영2로 144 / 15418</a></li>
+							<li><a href="#">대표번호:02-6908-3114</a></li>
+							<li><a href="#">A/S센터: http://as.hanssem.com</a></li>
+							<li><a href="#">쇼핑몰 고객센터 : 1688-4945</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="fl-right">
+					<div class="flag_shop">
+						<p>한샘플래그샵</p>
+						<ul>
+							<li><a href="#">잠실점 02-3430-6900, 논현점 02-542-8558</a></li>
+							<li><a href="#">목동점 02-6344-7000, 방배점 02-591-2300</a></li>
+							<li><a href="#">분당점 031-719-3100, 부산센텀점 051-790-8500</a></li>
+							<li><a href="#">대구범어점 053-749-8500</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="family">
+					<form name="family-site" action="" method="post">
+					<fieldset>
+						<legend>Family Site</legend>
+							<select name="siteLink" title="사이트 선택">
+								<option selected="selected">Family Site</option>
+								<option value='http://www.hanssem.com/mallmain.html'> · 한샘몰</option>
+								<option value='http://kitchen.hanssem.com/kitchen/main'> · 한샘키친&amp;바스</option>
+								<option value='http://interior.hanssem.com/index.do'> · 한샘인테리어</option>
+								<option value='http://ik.hanssem.com/ik/front/main.do'>· 한샘iK</option>
+								<option value='http://service.hanssem.com/main.as'>· 한샘서비스센터</option>
+							</select>
+					</fieldset>
+					</form>
+				</div>
+				
+				<div class="sns">
+					<ul>
+						<li><a href="#"><img src="images/icon_facebook.gif" alt="facebook" /></a></li>
+						<li><a href="#"><img src="images/icon_blog.gif" alt="blog" /></a></li>
+						<li><a href="#"><img src="images/icon_youtube.gif" alt="youtube" /></a></li>
+					</ul>
+				</div>
+			</div><!--//footer_inner-->
+		</div><!--//footer-->
+	</div><!--//wrapper-->
+ </body>
+</html>

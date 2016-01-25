@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+header,section,footer,h1,h2,h3,h4,ul,li,div,a,form,dl,dt,dd,input,label,button,address,p,body{
+	margin:0; 
+	padding:0;
+}
+
+ul,li{
+	list-style:none;
+}
+
+img,fieldset{
+	border:none; 
+	vertical-align:top;
+}
+
+a{
+	text-decoration:none;
+}
+
+#header{
+	position:fixed; 
+	z-index:1000; 
+	width:100%; 
+	background-color:#ffffff;
+}
+
+#slider{
+	position:relative;
+}
+
+#Portfolio{
+	position:relative; 
+	margin:0 auto; 
+	width:1080px; 
+	overflow:hidden;
+}
+
+#Contact{
+	position:relative; 
+	margin:0 auto; 
+	background-color:#324791; 
+	width:100%; 
+	height:1200px;
+}
+
+#About{
+	position:relative; 
+	margin:0 auto; 
+	background-color:#323d53; 
+	width:100%; 
+	height:500px;
+}
+
+#footer{
+	position:relative; 
+	margin:0 auto; 
+	background-color:#363f43; 
+	width:100%; 
+	height:100px;
+}
+
+#skipnavigation a{
+	position:absolute; 
+	left:-3000%;
+}
+
+#skipnavigation a:focus{
+	display:block; 
+	left:0; top:0; 
+	z-index:1000000; 
+	width:100%; 
+	height:30px; 
+	line-height:30px; 
+	background:#039; 
+	color:#fff; 
+	text-align:center;
+}
+
+#skipnavigation a:link, a:visited{
+	color: #fff; 
+	text-decoration: none;
+}

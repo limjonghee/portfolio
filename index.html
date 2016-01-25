@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>종희의 포트폴리오</title>
+<link rel="stylesheet" href="css/common.css"/>
+<link rel="stylesheet" href="css/main.css"/>
+<link rel="stylesheet" href="css/jquery.bxslider.css" />
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+
+</head>
+<body>
+	<div id="skipnavigation">
+		<ul>
+			<li><a href="#Portfolio">본문바로가기</a></li>
+		</ul>
+	</div>
+
+	<header id="header">
+		<div class="header_inner">
+		<h1><a href="#slider"><img src="images/logo2.jpg" alt="web publisher" /></a></h1>
+		<ul>
+			<li><a href="#Portfolio">Portfolio</a></li>
+			<li><a href="#Contact">Contact</a></li>
+			<li><a href="#About">About</a></li>
+		</ul>
+		</div>
+	</header>
+	<section id="slider">
+			<ul class="bxslider">
+				<li><img src="images/html.jpg" alt="html5"/></li>
+				<li><img src="images/css.jpg" alt="css3"/></li>
+				<li><img src="images/javascript.jpg" alt="javascript"/></li>
+				<li><img src="images/jquery.png" alt="jquery"/></li>
+			</ul>
+	</section>
+<script type="text/javascript">
+  $(document).ready(function(){
+	$('.bxslider').bxSlider({
+		auto:true,
+        mode:'fade',
+        pause:2000
+  });
+});
+</script>
+	<section id="Portfolio">
+		<div>
+			<h2>Portfolio</h2>
+			<p class="renewal">사이트 리뉴얼 </p>
+			<ul>
+				<li><a target="_blank" href="Portfolio/hanssem/index.html"><img src="images/hansem.png" alt="한샘 리뉴얼" /></a></li>
+				<li><a target="_blank" href="Portfolio/KIS/index.html"><img src="images/kis.png" alt="KIS 리뉴얼" /></a></li>
+				<li><a target="_blank" href="Portfolio/hollys/index.html"><img src="images/hollys.png" alt="할리스커피 리뉴얼" /></a></li>
+				<li><a target="_blank" href="Portfolio/foreign/index.html"><img src="images/foreign.png" alt="외국사이트 리뉴얼" /></a></li>
+				<li><a target="_blank" href="Portfolio/color/index.html"><img src="images/color.png" alt="색상사이트 리뉴얼" /></a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="Contact">
+		<h3>Contact</h3>
+		<div class="formwrap">
+			<form action=""></form>
+			<div class="contactForm">
+				<dl>
+					<dt><label for="contact_title"><a href="#">제목</a></label></dt>
+					<dd><input type="text" name="contact_title" id="contact_title"/></dd>
+					<dt><label for="contact_name"><a href="#">이름</a><sub>(필수)</sub></label></dt>
+					<dd><input id="contact_name" type="text" required="" name="contact_name"></dd>
+					<dt><label for="contact_tel"><a href="#">연락처</a><sub>(필수)</sub></label></dt>
+					<dd><input id="contact_tel" type="tel" required="" name="contact_tel"></dd>
+					<dt><label for="contact_email"><a href="#">이메일</a><sub>(필수)</sub></label></dt>
+					<dd><input id="contact_email" type="email" required="" name="contact_email"></dd>
+					<dt class="full"><label for="contact_text"><a href="#">내용</a><sub>(필수)</sub></label></dt>
+					<dd><textarea id="contact_text" data-rows="10" required="" name="contact_text"></textarea></dd>
+					<dt class="full"><label for="contact_file"><a href="#">첨부파일</a></label></dt>
+					<dd><div class="file"><input id="contact_file" type="file" name="contact_file"><div></div></div></dd>
+				</dl>
+				<button class="submit" type="submit"><a href="#">보내기</a></button>
+				<ul class="basicList">
+					<li>첨부파일은 1MB까지만 가능합니다</li>
+					<li>빠른 연결을 원하시면 <a href="tel:010-3025-8218">010-3025-8218</a>으로 연락부탁드립니다.</li>
+					<li>또는 <a href="mailto:lch873@naver.com">lch873@naver.com</a>으로 메일주세여!!!</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="About">
+		<div class="About_inner">
+		<h4>About</h4>
+		<p>깃허브에서 소스받기</p>
+		<button class="now" type="submit">바로가기</button>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="footer_inner">
+		<ul>
+			<li>H.P : 010-3025-8218</li>
+			<li>E-mail : lch873@naver.com</li>
+		</ul>
+		<address>Copyright © 2016. LIM JONGHEE All Rights Reserved.</address>
+		</div>
+	</footer>
+</body>
+</html>

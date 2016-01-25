@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title> 한샘닷컴 </title>
+<meta name="keywords" content="한샘닷컴"/>
+<meta name="description" content="컨텐츠 설명"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<link rel="stylesheet" href="css/jquery.bxslider.css"/>
+<link rel="stylesheet" href="css/main.css" /><!--sub와 메인사이즈가 너무 상이해서 sub1,2,3,4,5,6으로 나눔 sub끼리도 조금씩 다른 부분있어서 sub1,2,3,4,5,6으로 나눔-->
+
+<script type="text/javascript">
+$("div.family a").click(function() {
+    $(this).next("ul").toggle();
+    return false;
+});
+ 
+$("div.family ul li").click(function() {
+    $(this).parent().hide().parent("div.family").children("a").text($(this).text());
+    $(this).prependTo($(this).parent());
+});
+
+</script>
+ </head>
+ <body>
+  <div id="skipnavigation">
+	<ul>
+		<li><a href="#container">본문바로가기</a></li>
+	</ul>
+ </div>
+	<div id="wrapper">
+		<div id="header">
+			<div class="header_inner">
+				<h1><a href="index.html"><img src="images/h1_logo.gif" alt="한샘 인테리어"/></a></h1>
+				<div class="top">
+					<ul>
+						<li><a href="#">멤버쉽소개</a></li>
+						<li><a href="#">사이트맵</a></li>
+					</ul>
+				</div>
+				<div class="utill">
+					<ul>
+						<li>Language:</li>
+						<li><a href="#" class="korean">Korean / </a></li>
+						<li><a href="#">English / </a></li>
+						<li><a href="#">Chinese (Simplified)</a></li>
+					</ul>
+				</div>
+				<div class="gnb">
+					<ul>
+						<li><a href="sub1.html">기업소개</a>
+							<ul>
+								<li><a href="sub1.html">경영이념</a></li>
+								<li><a href="sub1.html">경영방침</a></li>
+								<li><a href="sub1.html">경영사업소개</a></li>
+								<li><a href="sub1.html">연혁</a></li>
+								<li><a href="sub1.html">한샘소식</a></li>
+							</ul>
+						</li>
+						<li><a href="sub2.html">채용안내</a>
+							<ul>
+								<li><a href="sub2.html">채용공고</a></li>
+								<li><a href="sub2.html">나의 채용정보</a></li>
+								<li><a href="sub2.html">채용정보</a></li>
+								<li><a href="sub2.html">한샘인사</a></li>
+							</ul>
+						</li>
+						<li><a href="sub3.html">투자정보</a>
+							<ul>
+								<li><a href="sub3.html">경영정보</a></li>
+								<li><a href="sub3.html">재무정보</a></li>
+								<li><a href="sub3.html">공시</a></li>
+							</ul>
+						</li>
+						<li><a href="sub4.html">사회공헌</a>
+							<ul>
+								<li><a href="sub4.html">한샘사회공헌</a></li>
+								<li><a href="sub4.html">사회공헌 발자취</a></li>
+								<li><a href="sub4.html">한샘 사회공헌 소식</a></li>
+							</ul>
+						</li>
+						<li><a href="sub5.html">고객지원</a>
+							<ul>
+								<li><a href="sub5.html">한샘서비스센터</a></li>
+								<li><a href="sub5.html">고객상담</a></li>
+								<li><a href="sub5.html">찾아오시는 길</a></li>
+								<li><a href="sub5.html">한샘멤버십</a></li>
+								<li><a href="sub5.html">한샘상품권</a></li>
+								<li><a href="sub5.html">공지사항</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--///gnb-->
+			</div><!--//header_inner-->
+		</div>
+		<div id="visual">
+			<div class="slider">
+					<ul class="bxslider">
+						<li><a href="#"><img src="images/sliderimage1.jpg" alt="가고 싶은 곳,머물고 싶은 곳" /></a></li>
+						<li><a href="#"><img src="images/sliderimage2.jpg" alt="국내 최대 인테리어 명품관" /></a></li>
+					</ul>
+			</div>
+		</div>
+		
+		<div id="container">
+			<div class="hanssem_link">
+				<div class="cont">
+					<div class="fl_left">
+						<h2>한샘몰</h2>
+						<p>국내최대 인테리어 전문 <br/> 온라인 쇼핑몰</p>
+						<a href="#" class="btn_link gray" title="한샘몰 바로가기" style="color:white;">바로가기</a>
+					</div>
+					<div class="roll_img">
+						<div class="rolling_img">
+							<ul id="slider4">
+								<li><img src="images/img_mall_01.jpg" alt="" /></li>
+								<li><img src="images/img_mall_02.jpg" alt="" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="cont_right">
+					<div class="fl_left">
+						<h2>한샘키친</h2>
+						<p>최고의 품격과 가치를 드리는<br/>부엌공간</p>
+						<a href="#" class="btn_link gray" title="한샘키친 바로가기" style="color:white;">바로가기</a>
+					</div>
+					<div class="roll_img">
+						<div class="rolling_img">
+							<ul id="slider1">
+								<li><img src="images/img_kit_01.jpg" alt="" /></li>
+								<li><img src="images/img_kit_02.jpg" alt="" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="cont">
+					<div class="fl_left">
+						<h2>한샘인테리어</h2>
+						<p>가구에서 소품까지<br/> 토탈 홈 인테리어의 모든 것</p>
+						<a href="#" class="btn_link gray" title="한샘키친 바로가기" style="color:white;">바로가기</a>
+					</div>
+					<div class="roll_img">
+						<div class="rolling_img">
+							<ul id="slider2">
+								<li><img src="images/img_int_01.jpg" alt="" /></li>
+								<li><img src="images/img_int_02.jpg" alt="" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="cont_right">
+					<div class="fl_left">
+						<h2>한샘iK</h2>
+						<p>전국에서 만날 수 있는<br/>인테리어 리모델링 솔루션</p>
+						<a href="#" class="btn_link gray" title="한샘키친 바로가기" style="color:white;">바로가기</a>
+					</div>
+					<div class="roll_img">
+						<div class="rolling_img">
+							<ul id="slider3">
+								<li><img src="images/img_ik_01.jpg" alt="" /></li>
+								<li><img src="images/img_ik_02.jpg" alt="" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="board_list">
+				<div class="board_news">
+					<h2>한샘소식</h2>
+					<ul>
+						<li><a href="#">한샘 2015 대한민국 가구디자인 공모전 시상 소식</a>
+						<span class="date">2015-12-04 </span>
+						</li>
+						<li><a href="#">한샘‘2015 제품안전의 날’ 국가 유공 산업포장 수상</a>
+						<span class="date">2015-12-04</span>
+						</li>
+						<li><a href="#">​​한샘플래그샵 대구범어점 개점 100일만에 대구시민</a>
+						<span class="date">2015-12-03</span>
+						</li>
+					</ul>
+					<a href="#" class="more" title="공지사항 더보기"><span class="hide">더보기</span></a>
+				</div>
+				<div class="board_notice">
+					<h2>공지사항</h2>
+					<ul>
+						<li><a href="#">닷컴 리뉴얼오픈</a>
+						<span class="date">2015-06-05</span>
+						</li>
+					</ul>
+					<a href="#" class="more" title="공지사항 더보기"><span class="hide">더보기</span></a>
+				</div>
+			</div>
+			<div class="banner_wrap">
+				<div class="news">
+					<a href="#"><img src="images/hassembannerimage.jpg" alt="편리하고 친절한 한샘AS 홈페이지 오픈 1주년 기념 이벤트" /></a>
+				</div>
+				<div class="flt_right">
+					<div class="blog">
+						<h3>한샘 공식 블로그</h3>
+						<p>가고 싶은 곳,<br/>머물고 싶은 곳</p>
+					</div>
+					<div class="book">
+						<h3>한샘 페이스북</h3>
+						<p>14,500명이<br/>좋아합니다.</p>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			if($('.bxslider li').length > 1){
+		$('.bxslider').bxSlider({
+			auto: true,
+			autoControls: true
+		});
+	}else{
+		$('.bxslider').bxSlider({
+			auto: false,
+			infiniteLoop: false,
+			autoControls: false
+		});
+		$(".bx-controls-direction").css("display", "none");
+	}
+	
+	
+	if($('#slider1 li').length > 1){
+		$('#slider1').bxSlider({
+			auto: true,
+			autoControls: true,
+			pause: 3000,
+			slideMargin: 0
+		});
+	}else{
+		$('#slider1').bxSlider({
+			auto: false,
+			infiniteLoop: false,
+			autoControls: true,
+			pause: 3000,
+			slideMargin: 0
+		});
+	}
+	
+	if($('#slider2 li').length > 1){
+		$('#slider2').bxSlider({
+			auto: true,
+			autoControls: true,
+			pause: 3000,
+			slideMargin: 0
+		});
+	}else{
+		$('#slider2').bxSlider({
+			auto: false,
+			infiniteLoop: false,
+			autoControls: true,
+			pause: 3000,
+			slideMargin: 0
+		});
+	}
+	
+	if($('#slider3 li').length > 1){
+		$('#slider3').bxSlider({
+			auto: true,
+			autoControls: true,
+			pause: 3000,
+			slideMargin: 0
+		});
+	}else{
+		$('#slider3').bxSlider({
+			auto: false,
+			infiniteLoop: false,
+			autoControls: true,
+			pause: 3000,
+			slideMargin: 0
+		});
+	}
+	
+	if($('#slider4 li').length > 1){
+		$('#slider4').bxSlider({
+			auto: true,
+			autoControls: true,
+			pause: 3000,
+			slideMargin: 0
+		});
+	}else{
+		$('#slider4').bxSlider({
+			auto: false,
+			infiniteLoop: false,
+			autoControls: true,
+			pause: 3000,
+			slideMargin: 0
+		});
+	}
+
+		</script>
+		<div id="footer">
+			<div class="footer_inner">
+				<div class="fl-left">
+					<div class="foot_link">
+						<ul>
+							<li><a href="#">이용약관 / </a></li>
+							<li><a href="#">개인정보취급방침 /</a></li>
+							<li><a href="#">이메일무단수집거부 /</a></li>
+							<li><a href="#">사이버감사실</a></li>
+						</ul>
+					</div>
+					<div class="foot_infoL">
+						<ul>
+							<li><a href="#">대표: 최양하</a></li>
+							<li><a href="#">사업자등록번호: 133-81-22865</a></li>
+							<li><a href="#">통신판매신고번호: 안산 제 512호</a></li>
+							<li><a href="#">All rights reserved. Copyright 2015</a></li>
+							
+						</ul>
+					</div>
+					<div class="foot_infoR">
+						<ul>
+							<li><a href="#">경기도 안산시 번영2로 144 / 15418</a></li>
+							<li><a href="#">대표번호:02-6908-3114</a></li>
+							<li><a href="#">A/S센터: http://as.hanssem.com</a></li>
+							<li><a href="#">쇼핑몰 고객센터 : 1688-4945</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="fl-right">
+					<div class="flag_shop">
+						<p>한샘플래그샵</p>
+						<ul>
+							<li><a href="#">잠실점 02-3430-6900, 논현점 02-542-8558</a></li>
+							<li><a href="#">목동점 02-6344-7000, 방배점 02-591-2300</a></li>
+							<li><a href="#">분당점 031-719-3100, 부산센텀점 051-790-8500</a></li>
+							<li><a href="#">대구범어점 053-749-8500</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="family">
+					<form name="family-site" action="" method="post">
+					<fieldset>
+						<legend>Family Site</legend>
+							<select name="siteLink" title="사이트 선택">
+								<option selected="selected">Family Site</option>
+								<option value='http://www.hanssem.com/mallmain.html'> · 한샘몰</option>
+								<option value='http://kitchen.hanssem.com/kitchen/main'> · 한샘키친&amp;바스</option>
+								<option value='http://interior.hanssem.com/index.do'> · 한샘인테리어</option>
+								<option value='http://ik.hanssem.com/ik/front/main.do'>· 한샘iK</option>
+								<option value='http://service.hanssem.com/main.as'>· 한샘서비스센터</option>
+							</select>
+					</fieldset>
+					</form>
+				</div>
+				
+				<div class="sns">
+					<ul>
+						<li><a href="#"><img src="images/icon_facebook.gif" alt="facebook" /></a></li>
+						<li><a href="#"><img src="images/icon_blog.gif" alt="blog" /></a></li>
+						<li><a href="#"><img src="images/icon_youtube.gif" alt="youtube" /></a></li>
+					</ul>
+				</div>
+			</div><!--//footer_inner-->
+		</div><!--//footer-->
+	</div><!--//wrapper-->
+ </body>
+</html>

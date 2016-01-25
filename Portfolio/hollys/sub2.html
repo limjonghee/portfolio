@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content="힐리스커피"/>
+<meta name="description" content="커피전문점 힐리스커피"/>
+<link rel="stylesheet" href="css/sub2.css" /><!--sub와 메인사이즈가 너무 상이해서 sub1,2,3,4,5,6으로 나눔 sub끼리도 조금씩 다른 부분있어서 sub1,2,3,4,5,6으로 나눔-->
+<title>할리스커피</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
+<script type="text/javascript">
+$(function(){
+function chk(){
+	if(cc == 1){
+		$(".gnb ul li ul").slideDown(100);
+		//$("#gnb .gnb_bg").slideDown(100);
+	}else{
+		$(".gnb ul li ul").slideUp(150);
+		//$("#gnb .gnb_bg").slideUp(250);
+	}
+}
+
+$(function(){
+
+$('.gnb ul li').mouseover(function(){
+	setTimeout(chk, 100);
+	cc = 1;
+	$(this).addClass('active');
+});
+
+$('.gnb').mouseout(function(){
+	setTimeout(chk, 400);
+	cc = 0;
+	$('.gnb ul li').removeClass('active');
+});
+
+$('.gnb ul li a').focus(function(){
+	setTimeout(chk, 100);
+	cc = 1;
+	$(this).parent().addClass('active');
+});
+
+$('.gnb ul li a').blur(function(){
+	setTimeout(chk, 100);
+	cc = 0;
+	$('.gnb ul li').removeClass('active');
+});
+
+});
+});
+</script>
+</head>
+<body>
+<div id="skipnavigation">
+	<ul>
+		<li><a href="#container">본문바로가기</a></li>
+	</ul>
+ </div>
+   <div id="wrapper">
+       <div id="header">
+        <div class="header_inner">
+            <h1><a href="index.html"><img src="images/logo.gif" alt="HOLLYS COFFEE"/></a></h1>
+            <div class="quickbanner">
+                <ul>
+                    <li><a href="#"><img src="images/gnb_smenu01.gif" alt="가맹문의"/></a></li>
+                    <li><a href="#"><img src="images/gnb_smenu02.gif" alt="아카데미"/></a></li>
+                </ul>
+            </div>
+            <div class="utill">
+                <ul>
+                    <li><a href="#"><img src="images/util_01.gif" alt="login"/></a></li>
+                    <li><a href="#"><img src="images/util_02.gif" alt="Join"/></a></li>
+                    <li><a href="#"><img src="images/util_05.gif" alt="English"/></a></li>
+                    <li><a href="#"><img src="images/util_09.gif" alt="고객센터"/></a></li>
+                </ul>
+            </div>
+            <div class="gnb">
+                <ul>
+                    <li class="first">
+						<a href="sub1.html" class="dep01"><img src="images/gnb_01.gif" alt="Menu" onmouseover="this.src='images/gnb_01_on.gif'" onmouseout="this.src='images/gnb_01.gif'"/></a>
+							<ul class="depth02">
+								<li><a href="sub1.html">New Menu</a></li>
+								<li><a href="sub1.html">에스프레소</a></li>
+								<li><a href="sub1.html">라떼·초콜릿·티</a></li>
+								<li><a href="sub1.html">할리치노·빙수</a></li>
+								<li><a href="sub1.html">스파클링·아이스티</a></li>
+								<li><a href="sub1.html">베이커리</a></li>
+								<li><a href="sub1.html">MD상품·원두커피</a></li>
+							</ul>
+					</li>
+                    <li>
+						<a href="sub2.html" class="dep01"><img class="off" src="images/gnb_02.gif" alt="HOLLYS Mall" onmouseover="this.src='images/gnb_02_on.gif'" onmouseout="this.src='images/gnb_02.gif'"/></a>
+							<ul class="depth02">
+								<li><a href="sub2.html">할리스콘</a></li>
+								<li><a href="sub2.html">할리스 기프트카드</a></li>
+							</ul>
+					</li>
+                    <li>
+						<a href="sub3.html" class="dep01"><img class="off" src="images/gnb_03.gif" alt="Membership" onmouseover="this.src='images/gnb_03_on.gif'" onmouseout="this.src='images/gnb_03.gif'"/></a>
+							<ul class="depth02">
+								<li><a href="sub3.html">멤버십 혜택안내</a></li>
+								<li><a href="sub3.html">멤버십 등록 및 발급</a></li>
+							</ul>
+					</li>
+                    <li>
+					<a href="sub4.html" class="dep01"><img class="off" src="images/gnb_04.gif" alt="HOLLYS News" onmouseover="this.src='images/gnb_04_on.gif'" onmouseout="this.src='images/gnb_04.gif'"/></a>
+						<ul class="depth02">
+							<li><a href="sub4.html">Notice</a></li>
+							<li><a href="sub4.html">Event</a></li>
+						</ul>
+					</li>
+                    <li><a href="sub5.html" class="dep01"><img class="off" src="images/gnb_05.gif" alt="Store" onmouseover="this.src='images/gnb_05_on.gif'" onmouseout="this.src='images/gnb_05.gif'"/></a>
+						<ul class="depth02">
+							<li><a href="sub5.html">국내</a></li>
+							<li><a href="sub5.html">해외</a></li>
+						</ul>
+					</li>
+                    <li class="last"><a href="sub6.html" class="dep01"><img class="off" src="images/gnb_06.gif" alt="HOLLYS is" onmouseover="this.src='images/gnb_06_on.gif'" onmouseout="this.src='images/gnb_06.gif'"/></a>
+						<ul class="depth02">
+							<li><a href="sub6.html">HOLLYS Coffee</a></li>
+							<li><a href="sub6.html">About Coffee</a></li>
+							<li><a href="sub6.html">CSR</a></li>
+							<li><a href="sub6.html">Gallery</a></li>
+							<li><a href="sub6.html">혜택 안내</a></li>
+							<li><a href="sub6.html">본사 위치</a></li>
+							<li><a href="sub6.html">채용 안내</a></li>
+							<li><a href="sub6.html">가맹 문의</a></li>
+						</ul>
+					</li>
+                </ul>
+            </div>
+        </div><!--//header_inner-->
+       </div><!--//header-->
+       <div id="contents">
+           <div class="nav">
+				<ul class="nav_menu">
+					<li><a href="#"><img src="images/lnb_mall_2depth01_on.gif" alt="할리스콘"/></a></li>
+					<li><a href="#"><img src="images/lnb_mall_2depth02.gif" onmouseover="this.src='images/lnb_mall_2depth02_on.gif'" onmouseout="this.src='images/lnb_mall_2depth02.gif'" alt="할리스 기프트카드"/></a></li>
+					
+				</ul>
+				<ul class="nav_banner">
+					<li><a href="#"><img src="images/img_bannerTit01.gif" alt="Membership" /></a></li>
+					<li><a href="#"><img src="images/img_bannerTxt01.gif" alt="사용금액의 5%적립과 무료로 음료 사이즈업 받으세요!" /></a></li>
+					<li><a href="#"><img src="images/bg_banner01.gif" alt="Membership"/></a></li>
+				</ul>
+           </div>
+		   <div class="content">
+				<div class="location">Home &gt; HOLLYS Mall &gt; 할리스콘</div>
+				<h2><img src="images/tit_mall01.gif" alt="할리스콘"/></h2>
+				<ul class="mall_list01">
+					<li><a href="#"><img width="140" alt="카페아메리카노R" src="images/img_Small92.jpg">
+					<span class="named">카페아메리카노R</span></a>
+					<span class="cost"> 4,100원</span>
+					</li>
+					<li><a href="#"><img width="140" alt="카페라떼R" src="images/img_Small99.jpg">
+					<span class="named">카페라떼R</span></a>
+					<span class="cost"> 4,600 원</span></li>
+					<li><a href="#"><img width="140" alt="바닐라 딜라이트R" src="images/img_Small93.jpg">
+					<span class="named">바닐라 딜라이트R</span></a>
+					<span class="cost"> 5,100 원</span></li>
+					<li><a href="#"><img width="140" alt="카라멜마끼아또R" src="images/mallProdut_201506190247481260.jpg"><span class="named">카라멜마끼아또R</span>
+					</a><span class="cost"> 5,500 원</span></li>
+					<li><a href="#"><img width="140" alt="카페모카R" src="images/mallProdut_201506190252434320.jpg">
+					<span class="named">카페모카R</span></a><span class="cost"> 5,100 원</span></li>
+					<li><a href="#"><img width="140" alt="스퀴즈 레몬 스파클링" src="images/mallProdut_201506010428188230.png"><span class="named">스퀴즈 레몬 스파클링</span></a>
+					<span class="cost"> 5,500 원</span></li>
+					<li><a href="#"><img width="140" alt="청포도 스파클링" src="images/mallProdut_201506010429143660.png"><span class="named">청포도 스파클링</span></a>
+					<span class="cost"> 5,500 원</span></li>
+					<li><a href="#"><img width="140" alt="복숭아 자두 스파클링" src="images/mallProdut_201506010430564760.png"><span class="named">복숭아 자두 스파클링</span></a>
+					<span class="cost"> 5,500 원</span></li>
+					<li><a href="#"><img width="140" alt="자몽 파인 스파클링" src="images/mallProdut_201506010430183610.png"><span class="named">자몽 파인 스파클링</span></a>
+					<span class="cost"> 5,500 원</span></li>
+					<li><a href="#"><img width="140" alt="유자크러쉬R" src="images/img_Small97.jpg"><span class="named">유자크러쉬R</span></a><span class="cost"> 5,700 원</span></li>
+					<li><a href="#"><img width="140" alt="플레인아이요떼R" src="images/mallProdut_201506190306541250.jpg"><span class="named">플레인아이요떼R</span></a>
+					<span class="cost"> 5,700 원</span></li>
+					<li><a href="#"><img width="140" alt="블루베리아이요떼R" src="images/mallProdut_201506190307146240.jpg"><span class="named">블루베리아이요떼R</span></a>
+					<span class="cost"> 5,700 원</span></li>
+					<li><a href="#"><img width="140" alt="홍자몽아이요떼R" src="images/mallProdut_201506190307339930.jpg"><span class="named">홍자몽아이요떼R</span></a>
+					<span class="cost"> 5,700 원</span></li>
+					<li><a href="#"><img width="140" alt="한라봉아이요떼R" src="images/mallProdut_201506190308243020.jpg"><span class="named">한라봉아이요떼R</span></a>
+					<span class="cost"> 5,700 원</span></li>
+					<li><a href="#"><img width="140" alt="골드키위스무디R" src="images/mallProdut_201506190306256350.jpg"><span class="named">골드키위스무디R</span></a>
+					<span class="cost"> 5,500 원</span></li>
+					<li><a href="#"><img width="140" alt="망고스무디R" src="images/mallProdut_201506190305474250.jpg">
+					<span class="named">망고스무디R</span></a><span class="cost"> 5,500 원</span></li>
+					<li><a href="#"><img width="140" alt="딸기스무디R" src="images/mallProdut_201506190305086090.jpg">
+					<span class="named">딸기스무디R</span></a><span class="cost"> 5,500 원</span></li>
+					<li><a href="#"><img width="140" alt="유자블러썸 아이스티R" src="images/img_Small100.jpg"><span class="named">유자블러썸 아이스티R</span></a><span class="cost"> 4,800 원</span></li>
+					<li><a href="#"><img width="140" alt="레드베리 아이스티R" src="images/img_Small101.jpg"><span class="named">레드베리 아이스티R</span></a><span class="cost"> 4,800 원</span></li>
+					<li><a href="#"><img width="140" alt="카라멜밀크쉐이크R" src="images/mallProdut_201506190304143570.jpg"><span class="named">카라멜밀크쉐이크R</span></a>
+					<span class="cost"> 5,500 원</span></li>
+					<li><a href="#"><img width="140" alt="에스프레소밀크쉐이크R" src="images/mallProdut_201506190303451140.jpg"><span class="named">에스프레소밀크쉐이크R</span></a>
+					<span class="cost"> 5,500 원</span></li>
+					<li><a href="#"><img width="140" alt="허니밀크쉐이크R" src="images/mallProdut_201506190303211160.jpg"><span class="named">허니밀크쉐이크R</span></a>
+					<span class="cost"> 5,500 원</span></li>
+					<li><a href="#"><img width="140" alt="리얼벨지안모카R" src="images/mallProdut_201506190254552770.jpg"><span class="named">리얼벨지안모카R</span></a>
+					<span class="cost"> 5,900 원</span></li>
+					<li><a href="#"><img width="140" alt="민트카페모카R" src="images/mallProdut_201506190253236040.jpg">
+					<span class="named">민트카페모카R</span></a><span class="cost"> 5,500 원</span></li>
+					<li><a href="#"><img width="140" alt="모카할리치노R" src="images/img_Small95.jpg">
+					<span class="named">모카할리치노R</span></a><span class="cost"> 5,700 원</span></li>
+					<li><a href="#"><img width="140" alt="민트초코할리치노R" src="images/img_Small96.jpg">
+					<span class="named">민트초코할리치노R</span></a><span class="cost"> 5,500 원</span></li>
+					<li><a href="#"><img width="140" alt="다크포레스트할리치노R" src="images/mallProdut_201506190302558670.jpg"><span class="named">다크포레스트할리치노R</span></a>
+					<span class="cost"> 5,900 원</span></li>
+					<li><a href="#"><img width="140" alt="벨지안초코칩할리치노R" src="images/mallProdut_201506190301587880.jpg"><span class="named">벨지안초코칩할리치노R</span></a>
+					<span class="cost"> 5,900 원</span></li>
+					<li><a href="#"><img width="140" alt="그린티할리치노R" src="images/mallProdut_201506190300518200.jpg">
+					<span class="named">그린티할리치노R</span></a><span class="cost"> 5,900 원</span></li>
+					<li><a href="#"><img width="140" alt="밀크티할리치노R" src="images/mallProdut_201506190301206900.jpg">
+					<span class="named">밀크티할리치노R</span></a><span class="cost"> 5,900 원</span></li>
+					<li><a href="#"><img width="140" alt="리얼벨지안초코R" src="images/mallProdut_201506190256366130.jpg">
+					<span class="named">리얼벨지안초코R</span></a><span class="cost"> 5,700 원</span></li>
+					<li><a href="#"><img width="140" alt="핫초코R" src="images/mallProdut_201506190259443830.jpg">
+					<span class="named">핫초코R</span></a><span class="cost"> 4,900 원</span></li>
+					<li><a href="#"><img width="140" alt="화이트초코R" src="images/mallProdut_201506190258050650.jpg">
+					<span class="named">화이트초코R</span></a><span class="cost"> 5,200 원</span></li>
+					<li><a href="#"><img width="140" alt="제주한라봉꿀차R" src="images/mallProdut_201506190300128890.jpg">
+					<span class="named">제주한라봉꿀차R</span></a><span class="cost"> 4,800 원</span></li>
+					<li><a href="#"><img width="140" alt="고구마라떼R" src="images/img_Small91.jpg">
+					<span class="named">고구마라떼R</span></a><span class="cost"> 5,500 원</span></li>
+					<li><a href="#"><img width="140" alt="그린티라떼R" src="images/mallProdut_201506190255343420.jpg">
+					<span class="named">그린티라떼R</span></a><span class="cost"> 5,800 원</span></li>
+					<li><a href="#"><img width="140" alt="밀크티라떼R" src="images/img_Small94.jpg">
+					<span class="named">밀크티라떼R</span></a><span class="cost"> 5,800 원</span></li>
+					<li><a href="#"><img width="140" alt="민트초코R" src="images/mallProdut_201506190257225520.jpg">
+					<span class="named">민트초코R</span></a><span class="cost"> 5,300 원</span></li>
+					<li><a href="#"><img width="140" alt="크로크무슈" src="images/img_Small98.jpg">
+					<span class="named">크로크무슈</span></a><span class="cost"> 3,900 원</span></li>
+				</ul>
+					
+		   </div>
+		   <div class="bg_default"></div>
+       </div><!--//content-->
+       <div id="footer">
+           <div class="footerinner">
+              <ul>
+                  <li><a href="#">유통관리시스템</a></li>
+                  <li><a href="#">개인정보취급방침</a></li>
+                  <li><a href="#">서비스이용약관</a></li>
+                  <li><a href="#">멤버십이용약관</a></li>
+                  <li><a href="#">고객문의</a></li>
+                  <li><a href="#">고객설문</a></li>
+                  <li><a href="#">사이트맵</a></li>
+              </ul>
+              <p>법인명: (주) 할리스에프앤비 대표자: 신상철 사업자등록번호 211-87-61044 통신판매업: 제2012-서울강남-01081호<br/>주소 : 서울특별시 강남구 테헤란로 620 미래에셋타워 13, 14층 대표전화 : 02-2188-7100</p>
+              <address>COPYRIGHT 2015 HOLLYS F&amp;B Co., Ltd. All Rights Reserved.</address>
+           </div>
+       </div><!--//footer-->
+   </div> 
+</body>
+</html>

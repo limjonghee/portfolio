@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+div,h1,ul,li,h1,span,img,fieldset{margin:0; padding:0;}
+img{border:0; vertical-align:top;}
+ul,li{list-style:none;}
+a{text-decoration:none;}
+caption{display:none;}
+fieldset, img{border:none;}
+legend{font-size:0; height:0; left:0; line-height:0; overflow:hidden; padding:0; position:absolute; top:0; visibility:hidden; width:0;}
+body {font-family: ³ª´®°íµñ, NanumGothic, ng, µ¸¿ò, arial, helvetica, sans-serif !important; font-size: 12px; line-height: 19px; color: #6f6f6f;}
+html, body {height:100%;}
+#wrapper{min-width:100%; position: relative;}
+#header{width:1007px; height:142px; margin:0 auto; position: relative;}
+#contents{width:940px; height:800px; margin:0 auto; padding-top:46px; padding-bottom:200px; position: relative;}
+#footer{margin:0 auto; padding-top:33px 0 0; position: relative; background: rgba(0, 0, 0, 0) url("../images/bg_footer.gif") repeat-x scroll left bottom; bottom: 0; font-size: 11px; height: 115px; left: 0; min-width: 940px; padding: 33px 0 0;}
+#skipnavigation a{position:absolute; left:-3000%;}
+#skipnavigation a:focus { display:block; left:0; top:0; z-index:10000000000; width:100%; height:30px; line-height:30px; background:#039; color:#fff; text-align:center;}
+#skipnavigation a:link, a:visited{color: #fff; text-decoration: none;}
+
+.header_inner{width:940px; position:relative; }
+.header_inner .quickbanner{position: absolute; top:17px; left:0;}
+.header_inner .quickbanner li{display:inline;}
+.header_inner h1{margin:0 auto; padding:30px 0 25px 0; width:271px;}
+.header_inner .utill{position: absolute; right:0; top:17px;}
+.header_inner .utill li{float:left; margin-right: 12px; margin-top:3px;}
+.header_inner .gnb{margin:0 auto; width:850px; padding:10px 0 0 0px; z-index:99999;}
+.header_inner .gnb ul{padding:0 20px 0 4px;}
+.header_inner .gnb ul li{float:left; position:relative; margin:0 0px 0 20px; }
+.header_inner .gnb ul li a{color:#808080;}
+.header_inner .gnb .first{width:100px;}
+.header_inner .gnb .dep01{padding:0 0 0px 20px;}
+.header_inner .gnb ul li ul li{float:none; width:900px; margin:10px 0 0 15px; padding-right:10px;} 
+.header_inner .gnb ul li ul{position:absolute; width:140px; top:12px; left:1px; z-index:999; margin-top:30px;
+height:250px;}
+.depth02{background:url("../images/bg_2depth.gif")}
+
+.nav{float:left; margin-right:50px; width:190px;}
+.nav .nav_menu{line-height:100%;}
+.nav .nav_menu li{margin-bottom:6px;}
+.nav .nav_banner{border-bottom: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; margin: 50px 0 0; padding: 30px 0 10px; width: 190px;}
+
+.content{float: left; height: 100%; width: 700px;}
+.content .form h2{margin:16px 0 60px;}
+.selectbox{padding-bottom:20px;}
+
+.bg_default{background: rgba(0, 0, 0, 0) url("../images/bg_coffee01.jpg") no-repeat scroll left top;
+height: 165px; position: absolute; right: 0; top: 0; width: 330px; z-index: -1;}
+.notice{border-bottom:1px solid #303030; border-top:1px solid #303030; width:100%;}
+.notice table{table-layout:fixed; width:100%; border-collapse:collapse; margin-bottom:15px;}
+.notice .board td{padding: 15px 0 4px; text-align:center;}
+.notice thead th{padding:10px 0 12px; text-align: center;}
+.notice th{color:#303030; line-height:16px; border-bottom:1px solid #D9D9D9;}
+.paging{text-align:center; margin-top:30px; margin-bottom:5px;}
+.paging ul{display:inline;}
+.paging ul li{display:inline-block; margin:3px 10px 10px 10px;}
+.searchbox{width:700px; text-align:center;}
+#search-box{width:122px; height:27px;}
+#searchValue{width:152px; height:25px; margin-left:7px; border:1px solid gray; line-height:20px; padding:0 0 0 10px;}
+.btn img{padding:3px 4px 0; height:18px;}
+
+
+#footer .footerinner{line-height: 14px; margin: 0 auto; overflow: hidden; width: 940px; }
+#footer .footerinner ul{}
+#footer .footerinner a{color:#faeff0; text-decoration:none; padding:0 8px 0 4px;}
+#footer .footerinner ul li{display:inline; border-right:1px solid #FFFFFF; padding-right:2px;}
+#footer .footerinner ul li:last-child{border:none;}
+#footer .footerinner p{line-height: 16px; margin-top: 23px; word-spacing: -1px; margin-bottom:0px; color:#de898e;}
+#footer .footerinner address{font-weight: bold; color:#de898e;}

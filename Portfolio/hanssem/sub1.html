@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title> 한샘닷컴 </title>
+<meta name="keywords" content="한샘닷컴"/>
+<meta name="description" content="컨텐츠 설명"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<link rel="stylesheet" href="css/jquery.bxslider.css"/>
+<link rel="stylesheet" href="css/sub1.css" /><!--sub와 메인사이즈가 너무 상이해서 sub1,2,3,4,5,6으로 나눔 sub끼리도 조금씩 다른 부분있어서 sub1,2,3,4,5,6으로 나눔-->
+
+<script type="text/javascript">
+$("div.family a").click(function() {
+    $(this).next("ul").toggle();
+    return false;
+});
+ 
+$("div.family ul li").click(function() {
+    $(this).parent().hide().parent("div.family").children("a").text($(this).text());
+    $(this).prependTo($(this).parent());
+});
+
+</script>
+ </head>
+ <body>
+  <div id="skipnavigation">
+	<ul>
+		<li><a href="#container">본문바로가기</a></li>
+	</ul>
+ </div>
+	<div id="wrapper">
+		<div id="header">
+			<div class="header_inner">
+				<h1><a href="index.html"><img src="images/h1_logo.gif" alt="한샘 인테리어"/></a></h1>
+				<div class="top">
+					<ul>
+						<li><a href="#">멤버쉽소개</a></li>
+						<li><a href="#">사이트맵</a></li>
+					</ul>
+				</div>
+				<div class="utill">
+					<ul>
+						<li>Language:</li>
+						<li><a href="#" class="korean">Korean / </a></li>
+						<li><a href="#">English / </a></li>
+						<li><a href="#">Chinese (Simplified)</a></li>
+					</ul>
+				</div>
+				<div class="gnb">
+					<ul>
+						<li><a href="sub1.html">기업소개</a>
+							<ul>
+								<li><a href="sub1.html">경영이념</a></li>
+								<li><a href="sub1.html">경영방침</a></li>
+								<li><a href="sub1.html">경영사업소개</a></li>
+								<li><a href="sub1.html">연혁</a></li>
+								<li><a href="sub1.html">한샘소식</a></li>
+							</ul>
+						</li>
+						<li><a href="sub2.html">채용안내</a>
+							<ul>
+								<li><a href="sub2.html">채용공고</a></li>
+								<li><a href="sub2.html">나의 채용정보</a></li>
+								<li><a href="sub2.html">채용정보</a></li>
+								<li><a href="sub2.html">한샘인사</a></li>
+							</ul>
+						</li>
+						<li><a href="sub3.html">투자정보</a>
+							<ul>
+								<li><a href="sub3.html">경영정보</a></li>
+								<li><a href="sub3.html">재무정보</a></li>
+								<li><a href="sub3.html">공시</a></li>
+							</ul>
+						</li>
+						<li><a href="sub4.html">사회공헌</a>
+							<ul>
+								<li><a href="sub4.html">한샘사회공헌</a></li>
+								<li><a href="sub4.html">사회공헌 발자취</a></li>
+								<li><a href="sub4.html">한샘 사회공헌 소식</a></li>
+							</ul>
+						</li>
+						<li><a href="sub5.html">고객지원</a>
+							<ul>
+								<li><a href="sub5.html">한샘서비스센터</a></li>
+								<li><a href="sub5.html">고객상담</a></li>
+								<li><a href="sub5.html">찾아오시는 길</a></li>
+								<li><a href="sub5.html">한샘멤버십</a></li>
+								<li><a href="sub5.html">한샘상품권</a></li>
+								<li><a href="sub5.html">공지사항</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--///gnb-->
+			</div><!--//header_inner-->
+		</div>
+		<div id="visual">
+			<div class="visual_inner">
+				<img src="images/img_intro_visual_01.jpg" alt="" />
+			</div>
+		</div>
+		
+		<div id="container">
+			<div class="location">
+				<p><a href="#"> 메인화면 </a> &gt; <a href="#"> 기업소개 </a> &gt; <a href="#"> 경영방침 </a></p>
+			</div>
+			<div class="tab">
+				<ul>
+					<li class="on"><a href="#">중장기목표</a></li>
+					<li><a href="#">윤리경영</a></li>
+				</ul>
+			</div>
+			<div class="contents">
+				<div class="top">
+					<h2 class="h_tit nam">2020년까지 세계 500대 기업으로<br/>성장하고자 합니다</h2>
+					<h3>중점사항</h3>
+					<ul>
+						<li class="nth1">단골고객 50%</li>
+						<li class="nth2">본부장, 팀장의<br/>세계 정상 수준<br/>역량확보</li>
+						<li class="nth3">건자재 시장 진출</li>
+						<li class="nth4">해외시장 확대</li>
+					</ul>
+				</div>
+				<ol>
+					<li>
+						<span class="img"><img src="images/img_poli_02.jpg" alt="" /></span>
+						<span class="num">첫번째</span>
+						<dl>
+							<dt>단골고객 50%</dt>
+							<dd>고객감동을 생명으로 생각하는 기업으로 거듭나는 것입니다.<br/>고객과 만나는 모든 접점에서의 '고객만족' 수준을 '고객감동' 수준으로<br/>혁신하여 단골고객 50%를 확보해야 합니다.<br/>이는 일선근무자뿐 아니라 한샘인 모두가 고객의 입장에서 생각하고<br/>행동해야만 가능합니다.</dd>
+						</dl>
+					</li>
+					<li>
+						<span class="img"><img src="images/img_poli_03.jpg" alt="" /></span>
+						<span class="num">두번쨰</span>
+						<dl>
+							<dt>본부장, 팀장의 세계 정상 수준 역량 확보</dt>
+							<dd>본부장, 팀장이 세계 정상 수준의 역량을 확보하는 것입니다.<br/>세계 500대 기업을 목표로 하는 한샘의 경쟁 상대는 국내 업체가 아닌<br/>세계 최강 기업입니다.  세계 최강 기업과 경쟁하기 위해서는<br/>세계 정상 수준의 역량을 갖춘 경영자가 필수적입니다.</dd>
+						</dl>
+					</li>
+					<li>
+						<span class="img"><img src="images/img_poli_04.jpg" alt="" /></span>
+						<span class="num">세번째</span>
+						<dl>
+							<dt>건자재 시장 진출</dt>
+							<dd>건자재 시장으로의 진출입니다.<br/>한샘은 부엌가구, 인테리어 가구 뿐만 아니라 욕실, 창호, 마루 등<br/>주택 내 여러 인테리어 아이템과 공간으로 사업영역을 확장하며<br/>토탈인테리어 패키지를 제공하는 기업으로 거듭나고자 합니다.</dd>
+						</dl>
+					</li>
+					<li>
+						<span class="img"><img src="images/img_poli_05.jpg" alt="" /></span>
+						<span class="num">네번째</span>
+						<dl>
+							<dt>해외시장 확대</dt>
+							<dd>해외 시장을 확대하는 것입니다.<br/>지금까지 한샘이 국내에서 창출해온 성공 사례를 바탕으로<br/>중국, 일본, 미국시장에 본격적으로 진출함으로써 해외 시장을<br/>확대해나가고자 합니다.</dd>
+						</dl>
+					</li>
+				</ol>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<div class="footer_inner">
+				<div class="fl-left">
+					<div class="foot_link">
+						<ul>
+							<li><a href="#">이용약관 / </a></li>
+							<li><a href="#">개인정보취급방침 /</a></li>
+							<li><a href="#">이메일무단수집거부 /</a></li>
+							<li><a href="#">사이버감사실</a></li>
+						</ul>
+					</div>
+					<div class="foot_infoL">
+						<ul>
+							<li><a href="#">대표: 최양하</a></li>
+							<li><a href="#">사업자등록번호: 133-81-22865</a></li>
+							<li><a href="#">통신판매신고번호: 안산 제 512호</a></li>
+							<li><a href="#">All rights reserved. Copyright 2015</a></li>
+							
+						</ul>
+					</div>
+					<div class="foot_infoR">
+						<ul>
+							<li><a href="#">경기도 안산시 번영2로 144 / 15418</a></li>
+							<li><a href="#">대표번호:02-6908-3114</a></li>
+							<li><a href="#">A/S센터: http://as.hanssem.com</a></li>
+							<li><a href="#">쇼핑몰 고객센터 : 1688-4945</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="fl-right">
+					<div class="flag_shop">
+						<p>한샘플래그샵</p>
+						<ul>
+							<li><a href="#">잠실점 02-3430-6900, 논현점 02-542-8558</a></li>
+							<li><a href="#">목동점 02-6344-7000, 방배점 02-591-2300</a></li>
+							<li><a href="#">분당점 031-719-3100, 부산센텀점 051-790-8500</a></li>
+							<li><a href="#">대구범어점 053-749-8500</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="family">
+					<form name="family-site" action="" method="post">
+					<fieldset>
+						<legend>Family Site</legend>
+							<select name="siteLink" title="사이트 선택">
+								<option selected="selected">Family Site</option>
+								<option value='http://www.hanssem.com/mallmain.html'> · 한샘몰</option>
+								<option value='http://kitchen.hanssem.com/kitchen/main'> · 한샘키친&amp;바스</option>
+								<option value='http://interior.hanssem.com/index.do'> · 한샘인테리어</option>
+								<option value='http://ik.hanssem.com/ik/front/main.do'>· 한샘iK</option>
+								<option value='http://service.hanssem.com/main.as'>· 한샘서비스센터</option>
+							</select>
+					</fieldset>
+					</form>
+				</div>
+				
+				<div class="sns">
+					<ul>
+						<li><a href="#"><img src="images/icon_facebook.gif" alt="facebook" /></a></li>
+						<li><a href="#"><img src="images/icon_blog.gif" alt="blog" /></a></li>
+						<li><a href="#"><img src="images/icon_youtube.gif" alt="youtube" /></a></li>
+					</ul>
+				</div>
+			</div><!--//footer_inner-->
+		</div><!--//footer-->
+	</div><!--//wrapper-->
+ </body>
+</html>

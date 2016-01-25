@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>외국사이트</title>
+<script src="js/jquery-2.1.4.min.js"></script>
+<style>
+/* reset */
+*{margin:0;padding:0;}
+body,html{height:100%;}
+img{border:0;vertical-align:top;}
+body{font-family:consolas;color:#666;}
+input,textarea{font-family:inherit;}
+a{text-decoration:none;color:inherit;}
+li{list-style:none;}
+.skip{width:0;height:0;font-size:0;line-height:0;position:absolute;left:-9999px;top:-9999px;overflow:hidden;visibility:hidden;}
+
+
+</style>
+</head>
+<body>
+
+<style>
+#header{position:fixed;left:0;right:0;top:0;height:110px;z-index:20;background-color:#fff;box-shadow:0 3px 3px #999;}
+
+#header .icon{position:absolute;top:30px;width:50px;height:50px;/*아이콘의 크기를 모두 50x50으로 통일*/border:2px solid #dfdfdf;box-sizing:border-box;border-radius:5px;transition:all 0.5s;}
+#header .icon span{display:inline-block;text-indent:-9999px;}
+#header .icon:before{display:block;font-size:2em;line-height:48px;text-align:center;}
+#header .icon:hover{border-color:#FFA699;color:#FFA699;}
+
+#header .home{left:20px;}
+#header .home:before{content:"♨";}
+
+#header .prev{right:80px;}
+#header .prev:before{content:"☜";}
+#header .next{right:20px;}
+#header .next:before{content:"☞";}
+
+#header h1{font-size:1.2em;position:absolute;left:80px;top:42px;}
+#header h1 span{font-weight:normal;font-size:0.8em;}
+
+#header .link{width:500px;margin:25px auto 0;}
+#header .link a{display:block;}
+#header .link img{width:100%;}
+
+#header .downTxt{position:absolute;top:30px;right:140px;color:#fff;background-color:#5fcec0;padding:15px 25px;border-radius:5px;}
+
+#header .downBtn{display:none;right:140px;color:#fff;background-color:#5fcec0;border-color:#5fcec0;}
+#header .downBtn:before{content:"☎";}
+#header .downBtn:hover{color:#fff;background-color:#FFA699;}
+
+@media all and (max-width:1300px) {	
+	#header .link{display:flex;align-items:center;margin:0 0 0 20px;width:calc(100% - 300px);/* 300px은 버튼4개가 차지하고 있는 영역크기 */max-width:728px;height:100%;}
+
+	#header h1{display:none;}
+	#header .downTxt{display:none;}
+	#header .downBtn{display:block;}
+	#header .home{left:auto;right:200px;}
+}
+@media all and (max-width:700px) {
+	#header .link{margin:0 auto;width:320px;height:auto;}
+	#header .icon{top:50px;left:50%;right:0;}
+	#header .home{margin-left:-115px;}
+	#header .downBtn{margin-left:-55px;}
+	#header .prev{margin-left:5px;}
+	#header .next{margin-left:65px;}
+}
+</style>
+
+<header id="header">
+	<a href="" class="icon home"><span>home</span></a>
+
+	<h1>Title 1 <span>Heading 1</span></h1>
+
+	<div class="link"><a href=""><img src="img/header.jpg" alt=""></a></div>
+
+	<a href="" class="downTxt"><b>HTML5Free Download</b> (25,547)</a>
+	<a href="" class="icon downBtn"><span>down</span></a>
+
+	<a href="" class="icon prev"><span>prev</span></a>
+	<a href="" class="icon next"><span>next</span></a>
+</header>
+
+
+
+
+
+<style>
+#visual{margin-top:110px;/*110px은 header 높이값*/background:url(img/overlay.png), url(img/visual.jpg) center bottom/cover no-repeat fixed;height:700px;position:relative;text-align:center;color:#fff;}
+#visual .tit{position:absolute;left:20px;top:20px;font-weight:bold;color:inherit;font-size:1.5em;}
+#visual span{display:inline-block;font-size:4em;line-height:1em;padding:20px;border:2px solid #fff;border-radius:50%;margin:160px 0 30px 0;}
+#visual h2{font-size:3em;padding:0 10%;}
+#visual p{font-size:2em;padding:30px 20%;}
+#visual .more{background-color:#51baa4;display:inline-block;padding:20px 40px;border-radius:40px;}
+#visual .menu{position:absolute;right:20px;top:20px;color:inherit;font-size:1.5em;}
+#visual .menu:before{content:"※ ";vertical-align:middle;}
+
+@media all and (max-width:1300px) {
+	#visual{height:500px;}
+	#visual span{margin-top:80px;}
+}
+@media all and (max-width:700px) {
+	#visual{height:400px;}
+	#visual span{margin-top:50px;font-size:3em;}
+	#visual h2{font-size:1.5em;}
+	#visual p{font-size:1em;padding-top:20px;padding-bottom:20px;}
+}
+</style>
+
+<section id="visual">
+	<a href="" class="tit">Retrospect</a>
+	<span>♬</span>
+	<h2>Title 2 Visual</h2>
+	<p>Magna feugiat lorem dolor egestas</p>
+	<a href="" class="more">Learn More</a>
+	<a href="#nav" class="menu">Menu</a>
+</section>
+
+
+
+
+<style>
+#nav{width:250px;background-color:#000;height:100%;position:fixed;right:-250px;top:110px;/* 110px은 header의 높이값 */transition:right 0.5s;}
+#nav.on{right:0;}
+#nav ul{padding:60px 0 0 20px;}
+#nav ul li{padding:10px 0;}
+#nav ul li a{color:#fff;font-size:1.5em;}
+#nav .close{position:absolute;right:20px;top:20px;font-size:2em;color:#999;transition:color 0.5s;}
+#nav .close:hover{color:#fff;}
+</style>
+
+<nav id="nav">
+	<h2 class="skip">Title 2 Navigation</h2>
+	<ul>
+		<li><a href="">Home</a></li>
+		<li><a href="">Generic</a></li>
+		<li><a href="">Elements</a></li>
+	</ul>
+	<a href="" class="close">X</a>
+</nav>
+
+<script>
+$("#visual .menu").click(function(e){
+	e.preventDefault();
+	$("#nav").addClass("on");
+});
+$("#nav .close").click(function(e){
+	e.preventDefault();
+	$("#nav").removeClass("on");
+});
+</script>
+
+
+
+
+<style>
+#sec1{background-color:#eee;padding:100px 0;}
+
+/* 글씨가 많을때 이미지는 언제나 중간에 위치 */
+#sec1 article{width:90%;max-width:1000px;margin:0 auto;display:flex;align-items:center;overflow:hidden;background-color:#fff;}
+#sec1 article:first-of-type{margin-bottom:100px;}
+
+#sec1 article .img{width:50%;}
+#sec1 article .img img{width:100%;}
+#sec1 article .box{width:50%;padding:30px;box-sizing:border-box;}
+#sec1 article h1{font-size:1.5em;}
+#sec1 article p{line-height:1.5;padding:20px 0;}
+#sec1 article .more{display:inline-block;border:2px solid #51baa4;color:#51baa4;padding:10px 50px;border-radius:30px;}
+
+@media all and (max-width:1024px) {
+	#sec1 article{display:block;}
+	#sec1 article .img{width:100%;}
+	#sec1 article .box{width:100%;}
+}
+@media all and (max-width:640px) {
+	#sec1{padding:50px 0;}
+	#sec1 article:first-of-type{margin-bottom:50px;}
+}
+</style>
+
+<section id="sec1">
+	<h2 class="skip">Title 2 Content 1</h2>
+	<article>
+		<div class="img"><img src="img/pic01.jpg" alt=""></div>
+		<div class="box">
+			<h1>Title 3 Article 1</h1>
+			<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+			<a href="" class="more">MORE</a>
+		</div>
+	</article>
+	<article>
+		<div class="img"><img src="img/pic02.jpg" alt=""></div>
+		<div class="box">
+			<h1>Title 3 Article 2</h1>
+			<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+			<a href="" class="more">MORE</a>
+		</div>
+	</article>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+#sec2{width:90%;max-width:1000px;margin:0 auto;padding:100px 0;text-align:center;}
+#sec2 h2{font-size:2em;}
+#sec2 p{padding:30px 0;width:60%;margin:0 auto;font-size:1.5em;}
+#sec2 .box{overflow:hidden;padding-bottom:50px;}
+#sec2 .box a{float:left;width:25%;}
+#sec2 .box img{width:100%;}
+#sec2 .more{display:inline-block;border:2px solid #51baa4;color:#51baa4;padding:10px 50px;border-radius:30px;transition:background-color 0.5s;}
+#sec2 .more:hover{background-color:#e2ede2;}
+
+@media all and (max-width:1024px) {
+	#sec2 .box a{width:50%;}
+}
+@media all and (max-width:640px) {
+	#sec2{padding:50px 0;}
+	#sec2 p{padding:20px 0;font-size:1em;}
+}
+</style>
+
+<section id="sec2">
+	<h2>Title 2 Content 2</h2>
+	<p>Ipsum dolor tempus commodo turpis adipiscing Tempor placerat sed amet accumsan</p>
+	<div class="box">
+		<a href=""><img src="img/pic03.jpg" alt=""></a>
+		<a href=""><img src="img/pic04.jpg" alt=""></a>
+		<a href=""><img src="img/pic05.jpg" alt=""></a>
+		<a href=""><img src="img/pic06.jpg" alt=""></a>
+		<a href=""><img src="img/pic07.jpg" alt=""></a>
+		<a href=""><img src="img/pic08.jpg" alt=""></a>
+		<a href=""><img src="img/pic09.jpg" alt=""></a>
+		<a href=""><img src="img/pic10.jpg" alt=""></a>
+	</div>
+	<a href="" class="more">Tempus Aliquam</a>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+#sec3{padding:100px 0;background:url(img/overlay.png), url(img/pic11.jpg) left top/cover no-repeat fixed;text-align:center;color:#fff;}
+#sec3 h2{font-size:2em;padding:0 10%;}
+#sec3 p{font-size:1.5em;padding:30px 25% 50px;}
+#sec3 .more{display:inline-block;border:2px solid #fff;color:#fff;padding:10px 50px;border-radius:30px;transition:background-color 0.5s;}
+#sec3 .more:hover{background-color:rgba(255,255,255,0.5);}
+
+@media all and (max-width:640px) {
+	#sec3{padding:50px 0;}
+	#sec3 p{padding-top:20px;padding-bottom:30px;font-size:1em;}
+}
+</style>
+
+<section id="sec3">
+	<h2>Title 2 Content 3</h2>
+	<p>Ipsum dolor tempus commodo turpis adipiscing Tempor placerat sed amet accumsan</p>
+	<a href="" class="more">Magna feugiat</a>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+#hadan{background-color:#1e2832;}
+
+#sec4{padding:100px 0;width:90%;max-width:1000px;margin:0 auto;}
+#sec4 h2{text-align:center;font-size:2em;color:#fff;}
+#sec4 p{text-align:center;font-size:1.5em;color:#fff;padding:30px 20% 50px;}
+
+#sec4 .ipt{overflow:hidden;}
+#sec4 .ipt input{box-sizing:border-box;width:calc(50% - 10px);/*margin값 10px 빼기*/}
+#sec4 .ipt input:first-child{float:left;margin-right:10px;}
+#sec4 .ipt input:last-child{float:right;margin-left:10px;}
+#sec4 .txt{padding:20px 0 50px 0;}
+#sec4 .txt textarea{width:100%;height:200px;box-sizing:border-box;}
+
+#sec4 .ipt input,
+#sec4 .txt textarea{background-color:#29333c;border-radius:5px;border:2px solid transparent;color:#a5a9ad;padding:20px;font-size:1.2em;}
+#sec4 .ipt input:focus,
+#sec4 .txt textarea:focus{border:2px double #51baa4;}
+
+#sec4 .btn{text-align:center;}
+#sec4 .btn input{padding:10px 40px;border-radius:30px;cursor:pointer;color:#fff;font-size:1.5em;}
+#sec4 .btn input[type=submit]{background-color:#51baa4;border:2px solid #51baa4;}
+#sec4 .btn input[type=reset]{background-color:transparent;border:2px solid #fff;}
+
+@media all and (max-width:640px) {
+	#sec4{padding:50px 0;}
+	#sec4 h2{font-size:1.5em;}
+	#sec4 p{font-size:1em;padding-top:10px;padding-bottom:20px;}
+	#sec4 .txt{padding:10px 0 20px 0;}
+
+	#sec4 .ipt input{float:none;width:100%;}
+	#sec4 .ipt input:first-child{margin-right:0;margin-bottom:10px;}
+	#sec4 .ipt input:last-child{margin-left:0;}
+
+	#sec4 .btn input{display:block;width:100%;box-sizing:border-box;}
+	#sec4 .btn input[type=reset]{margin-top:10px;}
+}
+</style>
+
+<div id="hadan">
+	<section id="sec4">
+		<h2>Title 2 Content 4</h2>
+		<p>Ipsum dolor tempus commodo adipiscing</p>
+		<form action="javascript:alert('success');">
+			<div class="ipt">
+				<input type="text" placeholder="Name" required>
+				<input type="email" placeholder="Email" required>
+			</div>
+			<div class="txt">
+				<textarea placeholder="Message"></textarea>
+			</div>
+			<div class="btn">
+				<input type="submit" value="submit">
+				<input type="reset" value="reset">
+			</div>
+		</form>
+
+	</section>
+
+	<footer id="footer">
+		<ul>
+			<li><a href="">♬</a></li>
+			<li><a href="">♪</a></li>
+			<li><a href="">♩</a></li>
+			<li><a href="">♭</a></li>
+		</ul>
+		<p>
+			© Untitled. 
+			<span>Images: <a href="">Unsplash</a>.</span>
+			<span>Design: <a href="">TEMPLATED</a>.</span>
+		</p>
+	</footer>
+</div>
+     
+<style>
+#footer{width:90%;max-width:1000px;margin:0 auto;padding:100px 0;text-align:center;border-top:1px solid #353e47;}
+#footer ul{}
+#footer ul li{display:inline-block;padding:0 10px;}
+#footer ul li a{font-size:2em;transition:color 0.5s;}
+#footer ul li a:hover{color:#fff;}
+#footer p{padding-top:30px;}
+#footer p a{text-decoration:underline;transition:color 0.5s;}
+#footer p a:hover{text-decoration:none;color:#fff;}
+
+@media all and (max-width:640px) {
+	#footer{padding:50px 0;}
+	#footer p{line-height:2;padding-top:20px;}
+	#footer p span{display:block;}
+}
+</style>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+div,h1,ul,li,h1,span,img,fieldset{margin:0; padding:0;}
+img{border:0; vertical-align:top;}
+ul,li{list-style:none;}
+a{text-decoration:none;}
+fieldset, img{border:none;}
+body {font-family: 나눔고딕, NanumGothic, ng, 돋움, arial, helvetica, sans-serif !important; font-size: 12px; line-height: 19px; color: #6f6f6f;}
+html, body {height: 100%;}
+#wrapper{width:100%; height:1825px; position: relative;}
+#header{width:1007px; height:142px; margin:0 auto; position: relative;}
+/* #visual{width:1007px; height:480px; margin:0 auto; position: relative;} */
+#content{width:940px; height:809px; margin:0 auto; padding-top:46px; padding-bottom:200px; position: relative;}
+#footer{width:1007px; height:115px; margin:0 auto; padding-top:33px; background-color:purple; position: relative; clear:both;}
+#skipnavigation a{position:absolute; left:-3000%;}
+#skipnavigation a:focus { display:block; left:0; top:0; z-index:10000000000; width:100%; height:30px; line-height:30px; background:#039; color:#fff; text-align:center;}
+#skipnavigation a:link, a:visited{color: #fff; text-decoration: none;}
+
+
+.header_inner{width:940px; position:relative; }
+.header_inner .quickbanner{position: absolute; top:17px; left:0;}
+.header_inner .quickbanner li{display:inline;}
+.header_inner h1{margin:0 auto; padding:30px 0 25px 0; width:271px;}
+.header_inner .utill{position: absolute; right:0; top:17px;}
+.header_inner .utill li{float:left; margin-right: 12px; margin-top:3px;}
+.header_inner .gnb{margin:0 auto; width:850px; padding:10px 0 0 0px; z-index:99999;}
+.header_inner .gnb ul{padding:0 20px 0 4px;}
+.header_inner .gnb ul li{float:left; position:relative; margin:0 0px 0 20px; }
+.header_inner .gnb ul li a{color:#808080;}
+.header_inner .gnb .first{width:100px;}
+.header_inner .gnb .dep01{padding:0 0 0px 20px;}
+.header_inner .gnb ul li ul li{float:none; width:900px; margin:10px 0 0 15px; padding-right:10px;} 
+.header_inner .gnb ul li ul{position:absolute; width:140px; top:12px; left:1px; z-index:999; margin-top:30px;
+height:250px;}
+.depth02{background:url("../images/bg_2depth.gif")}
+
+
+/* Grobal Navigation Bar  ->> gnb */
+/* Location Nabigation Bar ->> lnb */
+/* Side Nabigation Bar  snb */
+/*	white-space: nowrap; --> 여러줄로 해놔도 계속해서 한 줄에 보여지는 것 / text-overflow: ellipsis; --> 넓이 주고 ellopsis 주면
+끝에쪽부분이  ····으로 표시됨ㅎㅎ 
+css 넣는 방식
+white-space: nowrap; width:값; overflow: hidden; text-overflow: ellipsis; */
+
+
+#mainVisual {min-width:960px; width:100%; height:460px; overflow:hidden; z-index:1 !important;}
+#mainVisual .bx-pager-item {display:inline-block; zoom:1; *display:inline; margin:0 2px 30px; } 
+.visual li {height: 480px; left: 50%;  margin-left: -960px;}
+
+.mainlist{overflow:hidden;}
+.mainlist .list_left{position: relative;}
+.mainlist div{float: left; margin-right: 35px; width: 205px;}
+
+.mainlist .list_center{width: 460px;}
+.mainlist .list_center p{margin-bottom: 10px;}
+.mainlist .list_center span{display: block;}
+.mainlist .list_center ul{margin-top: 45px; overflow: hidden;}
+.mainlist .list_center li{
+	background: rgba(0, 0, 0, 0) url("../images/mall_bar01.gif") no-repeat scroll right top; 
+	float: left;
+	padding: 10px 26px 0;
+}	
+.mainlist .list_center .bar_none{background: rgba(0, 0, 0, 0) none repeat scroll 0 0;}
+.mainlist .list_right{margin-right: 0;}
+
+.mainlist2{margin-top: 30px; overflow: hidden;}
+.mainlist2 div{float: left; font-size: 0;}
+.mainlist2 .list2_center{letter-spacing: -1px; position: relative;}
+
+.mainlist3{margin-top: 30px; overflow: hidden; }
+.mainlist3 ul{margin-right:25px;}
+.mainlist3 ul li.going{
+	background: rgba(0, 0, 0, 0) url("../images/ico_arrow.gif") no-repeat scroll left 1px;
+	margin-top: 7px;
+	padding: 0 0 0 18px;
+}
+
+.mainlist3{margin-top:30px; overflow:hidden; height:100px;}
+.mainlist3 ul{float:left; width:205px;}
+.mainlist3 .list_left{float:left; margin-right:35px; width:205px;}
+.mainlist3 .list_etc a{text-decoration:none;}
+.mainlist3 .list_etc li{display:inline; float:left;}
+.mainlist3 .list_etc li span{display: block; text-align: center;}
+.mainlist3 .list_etc .etc-left{background:rgba(0, 0, 0, 0) url("../images/mall_bar01.gif") no-repeat scroll right top; margin-bottom: 5px; padding: 10px 13px;}
+.mainlist3 .list_etc .etc-center{background:rgba(0, 0, 0, 0) url("../images/mall_bar01.gif") no-repeat scroll right top; margin-bottom: 5px; padding: 10px 13px;}
+.mainlist3 .list_etc .etc-right{margin-bottom:5px; padding: 10px 13px;}
+.mainlist3 .going a{text-decoration:none;}
+
+.snslist{height: 142px; border-top: 2px solid #b5121b; margin-top: 50px; padding: 40px 0 0;}
+.snslist a{text-decoration:none;}
+.snslist a:hover{text-decoration:underline;}
+.sns_tit{margin-bottom: 20px;}
+.sns_list1{float: left; min-height: 58px; overflow: hidden; padding-right: 30px; position: relative; width: 205px;}
+.sns_list1 img{height: 48px; margin-top: 5px; width: 48px;}
+.sns_list1 ul{left: 60px; position: absolute; top:0; width: 145px;}
+
+.sns_list2{float: left; min-height: 58px; overflow: hidden; padding-right: 30px; position: relative; width: 205px;}
+.sns_list2 img{height: 48px; margin-top: 5px; width: 48px;}
+.sns_list2 ul{left: 60px; position: absolute; top:0; width: 145px;}
+
+.sns_list3{float: left; min-height: 58px; overflow: hidden; padding-right: 30px; position: relative; width: 205px;}
+.sns_list3 img{height: 48px; margin-top: 5px; width: 48px;}
+.sns_list3 ul{left: 60px; position: absolute; top:0; width: 145px;}
+
+.sns_list4{float: left; min-height: 58px; overflow: hidden; padding-right: 30px; position: relative; width: 205px;}
+.sns_list4 img{height: 48px; margin-top: 5px; width: 48px;}
+.sns_list4 ul{left: 60px; position: absolute; top:0; width: 145px;}
+
+#footer{background: rgba(0, 0, 0, 0) url("../images/bg_footer.gif") repeat-x scroll left bottom; bottom: 0; font-size: 11px; height: 115px; left: 0; min-width: 940px; padding: 33px 0 0; position: absolute; width: 100%;}
+#footer .footerinner{line-height: 14px; margin: 0 auto; overflow: hidden; width: 940px; }
+#footer .footerinner ul{}
+#footer .footerinner a{color:#faeff0; text-decoration:none; padding:0 8px 0 4px;}
+#footer .footerinner ul li{display:inline; border-right:1px solid #FFFFFF; padding-right:2px;}
+#footer .footerinner ul li:last-child{border:none;}
+#footer .footerinner p{line-height: 16px; margin-top: 23px; word-spacing: -1px; margin-bottom:0px; color:#de898e;}
+#footer .footerinner address{font-weight: bold; color:#de898e;}

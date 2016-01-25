@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+.content{width:740px; margin:0 auto;}
+.content ul{position:relative;}
+.content ul li{float:left; border-bottom:1px #dedede solid; height:120px; padding:20px 0; width:50%;}
+
+.main-slider{min-width:960px;}
+
+.menu{clear:both; margin:0 auto; width:600px; }
+.menu ul{position:relative;}
+.menu ul li{float:left;}
+

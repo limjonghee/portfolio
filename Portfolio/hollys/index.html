@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content="힐리스커피"/>
+<meta name="description" content="커피전문점 힐리스커피"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<link rel="stylesheet" href="css/jquery.bxslider.css"/>
+<link rel="stylesheet" href="css/main.css" /><!--sub와 메인사이즈가 너무 상이해서 sub1,2,3,4,5,6으로 나눔 sub끼리도 조금씩 다른 부분있어서 sub1,2,3,4,5,6으로 나눔-->
+<title>할리스커피</title>
+
+<script type="text/javascript">
+$(function(){
+function chk(){
+	if(cc == 1){
+		$(".gnb ul li ul").slideDown(100);
+		//$("#gnb .gnb_bg").slideDown(100);
+	}else{
+		$(".gnb ul li ul").slideUp(150);
+		//$("#gnb .gnb_bg").slideUp(250);
+	}
+}
+
+$(function(){
+
+$('.gnb ul li').mouseover(function(){
+	setTimeout(chk, 100);
+	cc = 1;
+	$(this).addClass('active');
+});
+
+$('.gnb').mouseout(function(){
+	setTimeout(chk, 400);
+	cc = 0;
+	$('.gnb ul li').removeClass('active');
+});
+
+$('.gnb ul li a').focus(function(){
+	setTimeout(chk, 100);
+	cc = 1;
+	$(this).parent().addClass('active');
+});
+
+$('.gnb ul li a').blur(function(){
+	setTimeout(chk, 100);
+	cc = 0;
+	$('.gnb ul li').removeClass('active');
+});
+
+});
+});
+</script>
+</head>
+<body>
+<div id="skipnavigation">
+	<ul>
+		<li><a href="#container">본문바로가기</a></li>
+	</ul>
+ </div>
+   <div id="wrapper">
+	  <div class="bg_subMenu"></div>
+       <div id="header">
+	   
+        <div class="header_inner">
+            <h1><a href="index.html"><img src="images/logo.gif" alt="HOLLYS COFFEE"/></a></h1>
+            <div class="quickbanner">
+                <ul>
+                    <li><a href="#"><img src="images/gnb_smenu01.gif" alt="가맹문의"/></a></li>
+                    <li><a href="#"><img src="images/gnb_smenu02.gif" alt="아카데미"/></a></li>
+                </ul>
+            </div>
+            <div class="utill">
+                <ul>
+                    <li><a href="#"><img src="images/util_01.gif" alt="login"/></a></li>
+                    <li><a href="#"><img src="images/util_02.gif" alt="Join"/></a></li>
+                    <li><a href="#"><img src="images/util_05.gif" alt="English"/></a></li>
+                    <li><a href="#"><img src="images/util_09.gif" alt="고객센터"/></a></li>
+                </ul>
+            </div>
+            <div class="gnb">
+                <ul>
+                    <li class="first">
+						<a href="sub1.html" class="dep01"><img src="images/gnb_01.gif" alt="Menu" onmouseover="this.src='images/gnb_01_on.gif'" onmouseout="this.src='images/gnb_01.gif'"/></a>
+							<ul class="depth02">
+								<li><a href="sub1.html">New Menu</a></li>
+								<li><a href="sub1.html">에스프레소</a></li>
+								<li><a href="sub1.html">라떼·초콜릿·티</a></li>
+								<li><a href="sub1.html">할리치노·빙수</a></li>
+								<li><a href="sub1.html">스파클링·아이스티</a></li>
+								<li><a href="sub1.html">베이커리</a></li>
+								<li><a href="sub1.html">MD상품·원두커피</a></li>
+							</ul>
+					</li>
+                    <li>
+						<a href="sub2.html" class="dep01"><img class="off" src="images/gnb_02.gif" alt="HOLLYS Mall" onmouseover="this.src='images/gnb_02_on.gif'" onmouseout="this.src='images/gnb_02.gif'"/></a>
+							<ul class="depth02">
+								<li><a href="sub2.html">할리스콘</a></li>
+								<li><a href="sub2.html">할리스 기프트카드</a></li>
+							</ul>
+					</li>
+                    <li>
+						<a href="sub3.html" class="dep01"><img class="off" src="images/gnb_03.gif" alt="Membership" onmouseover="this.src='images/gnb_03_on.gif'" onmouseout="this.src='images/gnb_03.gif'"/></a>
+							<ul class="depth02">
+								<li><a href="sub3.html">멤버십 혜택안내</a></li>
+								<li><a href="sub3.html">멤버십 등록 및 발급</a></li>
+							</ul>
+					</li>
+                    <li>
+					<a href="sub4.html" class="dep01"><img class="off" src="images/gnb_04.gif" alt="HOLLYS News" onmouseover="this.src='images/gnb_04_on.gif'" onmouseout="this.src='images/gnb_04.gif'"/></a>
+						<ul class="depth02">
+							<li><a href="sub4.html">Notice</a></li>
+							<li><a href="sub4.html">Event</a></li>
+						</ul>
+					</li>
+                    <li><a href="sub5.html" class="dep01"><img class="off" src="images/gnb_05.gif" alt="Store" onmouseover="this.src='images/gnb_05_on.gif'" onmouseout="this.src='images/gnb_05.gif'"/></a>
+						<ul class="depth02">
+							<li><a href="sub5.html">국내</a></li>
+							<li><a href="sub5.html">해외</a></li>
+						</ul>
+					</li>
+                    <li class="last"><a href="sub6.html" class="dep01"><img class="off" src="images/gnb_06.gif" alt="HOLLYS is" onmouseover="this.src='images/gnb_06_on.gif'" onmouseout="this.src='images/gnb_06.gif'"/></a>
+						<ul class="depth02">
+							<li><a href="sub6.html">HOLLYS Coffee</a></li>
+							<li><a href="sub6.html">About Coffee</a></li>
+							<li><a href="sub6.html">CSR</a></li>
+							<li><a href="sub6.html">Gallery</a></li>
+							<li><a href="sub6.html">혜택 안내</a></li>
+							<li><a href="sub6.html">본사 위치</a></li>
+							<li><a href="sub6.html">채용 안내</a></li>
+							<li><a href="sub6.html">가맹 문의</a></li>
+						</ul>
+					</li>
+                </ul>
+            </div>
+        </div><!--//header_inner-->
+       </div><!--//header-->
+       
+
+
+       
+           <div id="mainVisual">
+               <div class="visual">
+                   <ul class="main_slide">
+					   <li><a href="#">
+                       <img src="images/mainBanner_201512020416433310.jpg" alt="2015 할리스 산타 소중한 사람과 따뜻한 커피 한잔,할리스 산타가 루돌프카를 타고 찾아갑니다."/></a></li>
+                       <li><a href="#">
+                       <img src="images/mainBanner_201511020320405310.jpg" alt="시즌 제품2잔 포함 총 7잔 구매시 2016다이어리를 드립니다."/></a></li>
+                       <li>
+                       <a href="#"><img src="images/mainBanner_201511020222184530.jpg" alt="베리 고라운드,민트 초코칩,마스카포네 쿠키"/></a></li>
+                       <li><a href="#">
+                       <img src="images/mainBanner_201511020220291380.jpg" alt="리엘 벨지안 카페모카,리엘 벨지안 초코,베리 딜라이트 초코,민트 초코"/></a></li>
+                       <li><a href="#">
+                       <img src="images/mainBanner_201508210642041750.jpg" alt="에스프레소 추출 방식을 선택하여 할리스커피를 즐겨보세요"/></a></li>
+                   </ul>
+               </div>
+           </div><!--//visual_inner-->
+      
+
+		<script type="text/javascript">
+          $(document).ready(function(){
+            $('.main_slide').bxSlider({
+              auto:true,
+              mode:'fade',
+              pause:3000
+            });
+		  });
+        </script>
+
+       <div id="content">
+           <div class="mainlist">
+               <div class="list_left">
+                   <p><a href="#"><img src="images/menu_tit.gif" alt="Franchise"/></a></p>
+                   <a href="#"><img src="images/menu_img01.gif" alt="가맹 문의"/></a>
+               </div>
+               <div class="list_center">
+                   <p><img src="images/mall_tit.gif" alt="HOLLYS MALL"/></p>
+                   <span>할리스커피 기프트카드 및 할리스콘 구입</span>
+                   <ul>
+                       <li><a href="#"><img src="images/mall_img03.gif" alt="Coffee"/>
+                       <span style="margin:0 0 0 20px;">Coffee</span></a></li>
+                       <li><a href="#"><img src="images/mall_img04.gif" alt="Beverage"/>
+                       <span style="margin:0 0 0 10px;">Beverage</span></a></li>
+                       <li class="bar_none"><a href="#"><img src="images/mall_img05.gif" alt="Bakery"/>
+                       <span style="text-align:center">Bakery</span></a></li>
+                   </ul>
+               </div>
+               <div class="list_right">
+                   <p><a href="#"><img src="images/store_tit.gif" alt="store"/></a></p>
+                   <a href="#"><img src="images/store_img01.gif" alt="store"/></a>
+               </div>
+           </div>
+           <div class="mainlist2">
+               <div class="list2_left">
+                   <a href="#"><img src="images/mainBanner_201511020549543630.jpg" alt="기프트카드1"/></a>
+               </div>
+               <div class="list2_center">
+                   <a href="#"><img src="images/mainBanner_201504070954057610.gif" alt="WEB Center 2"/></a>
+               </div>
+               <div class="list2_right">
+                   <a href="#"><img src="images/mainBanner_201511040156219650.jpg" alt="할리스 멤버십 카드"/></a>
+               </div>
+           </div>
+           <div class="mainlist3">
+               <ul>
+                   <li><img src="images/academy_tit.gif" alt="Coffee Academy"/></li>
+                   <li style="margin-top:4px">할리스커피 아카데미와 함께하는 즐거운 커피 여행!</li>
+                   <li class="going"><a href="#" style="color:#6f6f6f">바로가기</a></li>
+               </ul>
+               <ul>
+                   <li><img src="images/recruit_tit.gif" alt="recruit"/></li>
+                   <li style="margin-top:4px">할리스커피에서 커피를 이해하고, 문화를 만들어 갈 인재를 초대합니다.</li>
+                   <li class="going"><a href="#" style="color:#6f6f6f">바로가기</a></li>
+               </ul>
+               <ul class="news_list">
+                   <li class="tit01">
+                       <img src="images/news_tit.gif" alt="news"/>
+                       <img src="images/ico_arrow.gif" alt="news 바로가기"/>
+                   </li>
+                   <li style="margin-bottom:-1px">
+                       <a href="#" style="color:#6f6f6f">
+                           <span style="float:left; width:153px; text-overflow:ellipsis overflow:hidden;">‘What’s Your Espresso </span>
+                           <span style="float:right;">08-21</span>
+                       </a>
+                   </li>
+                   <li style="margin-bottom:-1px">
+                       <a href="#" style="color:#6f6f6f">
+                           <span style="float:left; width:153px; text-overflow:ellipsis overflow:hidden;">'Make your Own' - 나만</span>
+                           <span style="float:right;">08-21</span>
+                       </a>
+                   </li>
+                   <li style="margin-bottom:-1px">
+                       <a href="#" style="color:#6f6f6f">
+                           <span style="float:left; width:153px; text-overflow:ellipsis overflow:hidden;">아이스라인텀블러 멤버십 포</span>
+                           <span style="float:right;">08-24</span>
+                       </a>
+                   </li>
+               </ul>
+               <ul class="list_etc">
+                   <li><a href="#">
+                       <span class="etc-left"><img src="images/img_etc01.gif" alt="가맹문의"/></span>
+                       <span style="color:#6f6f6f">가맹문의</span>
+                   </a></li>
+                   <li>
+                       <a href="#">
+                           <span class="etc-center"><img src="images/img_etc02.gif" alt="아카데미 강좌"/></span>
+                           <span style="color:#6f6f6f">아카데미 강좌</span>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <span class="etc-right"><img src="images/img_etc03.gif" alt="고객문의"/></span>
+                           <span style="color:#6f6f6f">고객문의</span>
+                       </a>
+                   </li>
+               </ul>
+           </div>
+           <div class="snslist">
+            <p class="sns_tit">
+                <img src="images/sns_tit.gif" alt="HOLLYS LIVE"/>
+                <span><img src="images/sns_facebook.gif" alt="facebook"/></span>
+            </p>
+               <div class="sns_list">
+                   <div class="sns_list1">
+                       <p><a href="#"><img src="images/10984031_1244226595593766_4941797639566925734_n.jpg" alt=""/></a></p>
+                       <ul>
+                           <li><span class="stit">2015-11-26 00:36</span></li>
+                           <li><a href="#" style="color:#6f6f6f">내 운명의 사람을 언제쯤 만날까 달콤한 음료 한잔</a></li>
+                       </ul>
+                   </div>
+                   <div class="sns_list2">
+                       <p><a href="#"><img src="images/12301470_1243726622310430_9083890332718633949_n.jpg" alt=""/></a></p>
+                       <ul>
+                           <li><span class="stit">2015-11-25 00:56</span></li>
+                           <li><a href="#" style="color:#6f6f6f">귀여운 트리에, 달콤한 캔디를 솔솔 – Q : 캔디솔솔</a></li>
+                       </ul>
+                   </div>
+                   <div class="sns_list3">
+                       <p><a href="#"><img src="images/12278650_1243277079022051_1558398378232870781_n.jpg" alt=""/></a></p>
+                       <ul>
+                           <li><span class="stit">2015-11-24 06:43</span></li>
+                           <li><a href="#" style="color:#6f6f6f">내게 잔잔한 힐링을 주는 달콤한 캔디가 솔솔솔 캔디캔</a></li>
+                       </ul>
+                   </div>
+                   <div class="sns_list4">
+                       <p><a href="#"><img src="images/12278986_1243142285702197_1044649704759430193_n.jpg" alt=""/></a></p>
+                       <ul>
+                           <li><span class="stit">2015-11-24 00:18</span></li>
+                           <li><a href="#" style="color:#6f6f6f">많은 달콤함 중에서도 달콤한 캔디를 솔솔 캔디캔디</a></li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div><!--//content-->
+       <div id="footer">
+           <div class="footerinner">
+              <ul>
+                  <li><a href="#">유통관리시스템</a></li>
+                  <li><a href="#">개인정보취급방침</a></li>
+                  <li><a href="#">서비스이용약관</a></li>
+                  <li><a href="#">멤버십이용약관</a></li>
+                  <li><a href="#">고객문의</a></li>
+                  <li><a href="#">고객설문</a></li>
+                  <li><a href="#">사이트맵</a></li>
+              </ul>
+              <p>법인명: (주) 할리스에프앤비 대표자: 신상철 사업자등록번호 211-87-61044 통신판매업: 제2012-서울강남-01081호<br/>주소 : 서울특별시 강남구 테헤란로 620 미래에셋타워 13, 14층 대표전화 : 02-2188-7100</p>
+              <address>COPYRIGHT 2015 HOLLYS F&amp;B Co., Ltd. All Rights Reserved.</address>
+           </div>
+       </div><!--//footer-->
+   </div> 
+</body>
+</html>

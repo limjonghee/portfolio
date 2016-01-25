@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>완성</title>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<style>
+*{margin:0;padding:0;}
+html,body{overflow-x:hidden;}
+body{font-family:consolas;color:#fff;}
+li{list-style:none;}
+
+#header{border-bottom:10px solid rgba(0,0,0,0.2);}
+#header h1{text-align:center;font-size:50px;line-height:2;}
+#header .code{position:absolute;right:30px;top:40px;font-size:22px;}
+
+#footer{height:100px;border-top:10px solid rgba(0,0,0,0.2);}
+
+#container{margin:50px auto;}
+
+#nav{width:1040px;margin:0 auto;padding-bottom:25px;border-bottom:1px solid #999;}
+
+#content:after{content:"";display:block;clear:both;}
+#content{width:1040px;margin:0 auto;padding-top:25px;}
+#content article{float:left;width:212px;margin:10px 24px;}
+
+.box{display:inline-block;padding:28px;border-radius:5px;margin:-2px;vertical-align:top;cursor:pointer;position:relative;}
+.box:hover{transform:scale(1.5,1.5);z-index:10;}
+.box span{position:absolute;left:0;right:0;top:0;bottom:0;text-align:center;line-height:56px;}
+
+.box.on{margin:-7px;border:5px solid #fff;box-shadow:0 0 4px rgba(0, 0, 0, 0.6);z-index:20;}
+.box.on:hover{transform:none;}
+
+@media all and (max-width:1100px) {
+	#nav{width:520px;}
+	#content{width:737px;}
+	#content article{margin:14px 16px;}
+
+	#header .code{position:static;text-align:center;padding-bottom:20px;}
+}
+@media all and (max-width:800px) {
+	#content{width:468px;}
+	#content article{margin:5px 11px 36px 11px;}
+
+	#header h1{font-size:30px;}
+}
+@media all and (max-width:600px) {
+	#nav{width:208px;}
+	#content{width:208px;}
+	#content article{margin:4px 5px 24px 5px;}
+}
+</style>
+</head>
+<body>
+
+<header id="header">
+	<h1>- Flat Colors UI -</h1>
+	<div class="code"></div>
+</header>
+
+<div id="container">
+	<nav id="nav">
+		<ul></ul>
+	</nav>
+	<section id="content"></section>
+</div>
+
+<footer id="footer"></footer>
+
+<script>
+// 배경색 랜덤칼라
+function rgba(){
+	var arr = [];
+	for(var i=0; i<3; i++){
+		arr[i] = Math.floor( Math.random() * 256 ); // 0 ~ 255
+	}
+	//arr[3] = Math.random(); // 0포함 ~ 1미만
+	arr[3] = 1;
+	return "rgba("+arr+")";
+}
+
+
+
+
+
+// 네모박스 자동 생성 및 id 추가
+//var idArr = ["A","B","C","D","E","F","G","H","I","J","K","L","M"];
+var aCode = 65; // A의 아스키코드는 65
+for(var i=1; i<=20; i++){
+	//$("#nav ul").append("<li class='box' id='"+(idArr[0]+""+i)+"'></li>");
+	$("#nav ul").append("<li class='box' id='"+(String.fromCharCode(aCode)+""+i)+"'></li>");
+}
+for(var i=1; i<=12; i++){
+	aCode++; // 1씩 증가할때마다 B,C,D... 순으로 적용됨
+	$("#content").append("<article></article>");
+	for(var j=1; j<=12; j++){
+		//$("#content article:last").append("<div class='box' id='"+(idArr[i]+""+j)+"'></div>");
+		$("#content article:last").append("<div class='box' id='"+(String.fromCharCode(aCode)+""+i)+"'></div>");
+	}
+}
+
+
+
+
+// 갯수가 총 164개이므로 box의 index는 0~163
+// 랜덤수를 구하여 페이지 시작시 무작위로 아무거나 클릭
+var boxLength = $(".box").length; // 20 + (12 x 12) = 164
+var num = Math.floor( Math.random() * boxLength ); // 0 ~ 163
+
+
+
+
+
+
+
+
+// 네모박스에 랜덤 배경색 주기, 호버시 본인의 id 등장
+$(".box").each(function(i){
+	$(this).css("background-color", rgba());
+}).on("mouseenter mouseleave click", function(e){
+
+	var target = $(this);
+	var onTarget = $(".box.on");
+
+	// 이미 클릭된 요소라면 중지
+	if(target.hasClass("on")){
+		return false;
+	}
+
+	var bgColor = target.css("background-color");
+	var onColor = onTarget.css("background-color");
+
+	if(e.type == "click"){
+		$(".box.on").children().remove();
+		$(".box.on").removeClass("on");
+		target.addClass("on");
+
+		$(".code").html(bgColor);
+		$("#header, #footer").css("background-color", bgColor);
+	}else if(e.type == "mouseenter"){
+		target.append("<span>"+this.id+"</span>");
+
+		$(".code").html(bgColor);
+		$("#header, #footer").css("background-color", bgColor);
+	}else if(e.type == "mouseleave"){
+		target.children().remove();
+
+		$(".code").html(onColor);
+		$("#header, #footer").css("background-color", onColor);
+	}
+}).eq(num).mouseenter().click();
+</script>
+
+<!--
+rgb to hex
+http://stackoverflow.com/questions/1740700/how-to-get-hex-color-value-rather-than-rgb-value
+-->
+
+</body>
+</html>
